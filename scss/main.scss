@@ -1,0 +1,18 @@
+
+.restaurant-card {
+    outline: 3px solid red;
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    padding: 0;
+}
+
+
+
+.restaurant-card-img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
