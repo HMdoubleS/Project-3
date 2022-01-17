@@ -14,4 +14,11 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+
+.menu-restaurant-image {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=main.css.map */
