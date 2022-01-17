@@ -4,6 +4,7 @@
   height: auto;
   border-radius: 15px;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .restaurant-card-img {
@@ -20,5 +21,10 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu-choices-card {
+  outline: 3px solid black;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
