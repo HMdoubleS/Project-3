@@ -1,31 +1,6 @@
-
-.restaurant-card {
-    outline: 3px solid red;
-    width: 40%;
-    height: auto;
-    border-radius: 15px;
-    padding: 0;
-    margin-bottom: 10px;
-}
+@import "./pages/homepage";
+@import "./pages/menu";
 
 
 
-.restaurant-card-img {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 
-
-.menu-restaurant-image {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.menu-choices-card {
-    outline: 3px solid black;
-    margin-bottom: 10px;
-}

@@ -14,15 +14,16 @@
     <header>
         <h2 class="title">ohmyfood</h2>
         <section class="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Paris&comma;&nbsp;Belleville</span>
+            <div class="location__icon">
+                <i class="fas fa-map-marker-alt"></i><span>Paris&comma;&nbsp;Belleville</span>
+            </div>
         </section>
     </header>
     
     <main>
         <section class="booking">
-            <div class="container-bkg">
-                <div class="booking-info">
+            <div class="container">
+                <div class="booking__info">
                     <h3>Book the menu you like</h3>
                     <p>Discover top-of-the-art restaurants we picked for you</p>
                     <button type="button" class="btn-gradient">Explore our restaurants</button>
@@ -31,28 +32,25 @@
         </section>
         
         <section class="explanation">
-            <div class="container-expl">
+            <div class="container">
                 <h2>How it works</h2>
 
-                <div class="explanation-card">
-                <div class="explanation-card-num">1</div>
+                <div class="explanation__card">
+                <div class="explanation__card-num">1</div>
                     <button type="button" class="button">
-                        <i class="fas fa-mobile-alt"></i>
-                        <span>Choose a restaurant</span>
+                        <i class="fas fa-mobile-alt"></i><span>Choose a restaurant</span>
                     </button>
                 </div>
-                <div class="explanation-card">
+                <div class="explanation__card">
                 <div class="explanation-card-num">2</div>
                     <button type="button" class="button">
-                        <i class="fas fa-list"></i>
-                        <span>Create your menu</span>
+                        <i class="fas fa-list"></i><span>Create your menu</span>
                     </button>
                 </div>
-                <div class="explanation-card">
-                <div class="explanation-card-num">3</div>
+                <div class="explanation__card">
+                <div class="explanation__card-num">3</div>
                     <button type="button" class="button">
-                        <i class="fas fa-store"></i>
-                        <span>Go enjoy it at the restaurant</span>
+                        <i class="fas fa-store"></i><span>Go enjoy it at the restaurant</span>
                     </button>
                 </div>
             </div>
@@ -61,50 +59,50 @@
         <section class="restaurant">
             <div class="container">
                 <h2>Restaurants</h2>
-                <div class="restaurant-container">
-                    <div class="restaurant-card">
-                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant-card-img" alt="The Full Palette"/></a>
-                        <section class="restaurant-card-label">New</section>
-                        <div class="restaurant-card-info">
+                <div class="restaurant__container">
+                    <div class="restaurant__card">
+                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant__card-img" alt="The Full Palette" height="150"/></a>
+                        <section class="restaurant__card-label">New</section>
+                        <div class="restaurant__card-info">
                             <h3>The Full Palette</h3>
                             <h4>New York</h4>
                         </div>
-                        <div class="restaurant-card-icon">
+                        <div class="restaurant__card-icon">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
 
             
-                    <div class="restaurant-card">
-                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant-card-img" alt="The Enchanted Plate"/></a>
-                        <section class="restaurant-card-label">New</section>
-                        <div class="restaurant-card-info">
+                    <div class="restaurant__card">
+                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant--__card-img" alt="The Enchanted Plate" height="150"/></a>
+                        <section class="restaurant__card-label">New</section>
+                        <div class="restaurant__card-info">
                             <h3>The Enchanted Plate</h3>
                             <h4>New York</h4>
                         </div>
-                        <div class="restaurant-card-icon">
+                        <div class="restaurant__card-icon">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
 
-                    <div class="restaurant-card">
-                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant-card-img" alt="Bastille"/></a>
-                        <div class="restaurant-card-info">
+                    <div class="restaurant__card">
+                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant__card-img" alt="Bastille" height="150"/></a>
+                        <div class="restaurant__card-info">
                             <h3>Bastille</h3>
                             <h4>New York</h4>
                         </div>
-                        <div class="restaurant-card-icon">
+                        <div class="restaurant__card-icon">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
                
-                    <div class="restaurant-card">
-                        <a href="/menu-gourmand.html"><img src="images/restaurants/le-gourmand.jpg" class="restaurant-card-img" alt="Le Gourmand"/></a>
-                        <div class="restaurant-card-info">
+                    <div class="restaurant__card">
+                        <a href="/menu-gourmand.html"><img src="images/restaurants/le-gourmand.jpg" class="restaurant__card-img" alt="Le Gourmand" height="150"/></a>
+                        <div class="restaurant__card-info">
                             <h3>Le Gourmand</h3>
                             <h4>New York</h4>
                         </div>
-                        <div class="restaurant-card-icon">
+                        <div class="restaurant__card-icon">
                             <i class="far fa-heart"></i>
                         </div>
                     </div>
@@ -114,19 +112,17 @@
     </main>
 
     <footer class="footer">
-        <div class="container-footer">
-            <section class="footer-title">
-                <img src="images/logo/ohmyfood.png" alt="logo" class="footer-logo"/>
+        <div class="container__footer">
+            <section class="footer__title">
+                <img src="images/logo/ohmyfood.png" alt="logo" class="footer__logo"/>
             </section>
         </div>
-        <ul class="footer-nav">
-            <li class="footer-item"><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
-            <li class="footer-item"><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
-            <li class="footer-item"><a href="#">Legal</a></li>
-            <li class="footer-item"><a href="#">Contact</a></li>
+        <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
+            <li class="footer__nav-item"><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
+            <li class="footer__nav-item"><a href="#">Legal</a></li>
+            <li class="footer__nav-item"><a href="#">Contact</a></li>
         </ul>
     </footer>
-
-
 </body>
 </html>
