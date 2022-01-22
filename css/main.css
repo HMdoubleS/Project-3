@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+/* color */
+/* font */
+h1 {
+  font-family: "Shrikhand", sans serif;
+}
+
+h2 {
+  font-family: "Roboto", sans serif;
+}
+
+h3 {
+  font-family: "Roboto", sans serif;
+}
+
+p {
+  font-family: "Roboto", sans serif;
+}
+
+.location {
+  font-family: "Roboto", sans serif;
+}
+
+.button {
+  font-family: "Roboto", sans serif;
+}
+
+.footer__nav {
+  font-family: "Roboto", sans serif;
+}
+/*# sourceMappingURL=main.css.map */

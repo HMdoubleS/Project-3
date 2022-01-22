@@ -1,10 +1,16 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AOAA,WAAW;AAKX,UAAU;ACLV,AAAA,EAAE,CAAC;EACC,WAAW,EDKF,WAAW,EAAE,IAAI,CAAC,KAAK;CCJnC;;AAED,AAAA,EAAE,CAAC;EACC,WAAW,EDEH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCD/B;;AAED,AAAA,EAAE,CAAC;EACC,WAAW,EDFH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCG/B;;AAED,AAAA,CAAC,CAAC;EACE,WAAW,EDNH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCO/B;;AAED,AAAA,SAAS,CAAC;EACN,WAAW,EDVH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCW/B;;AAED,AAAA,OAAO,CAAC;EACJ,WAAW,EDdH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCe/B;;AAED,AAAA,YAAY,CAAC;EACT,WAAW,EDlBH,QAAQ,EAAE,IAAI,CAAC,KAAK;CCmB/B",
     "sources": [
         "../scss/main.scss",
         "../scss/pages/_homepage.scss",
-        "../scss/pages/_menu.scss"
+        "../scss/pages/_menu.scss",
+        "../scss/components/_button.scss",
+        "../scss/components/_cards.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/layout/_header.scss",
+        "../scss/utilities/_variables.scss",
+        "../scss/utilities/_typography.scss"
     ],
     "names": [],
     "file": "main.css"
