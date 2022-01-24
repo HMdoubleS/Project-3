@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px) {
+
+    .header__title {
+        @include center;
+    
+        .header__logo {
+            height: 38px;
+            width: 60%;
+            padding: 15px;
+            margin: 0;
+        }
+    }
+
+    .location {
+        @include center;
+        font-weight: 500;
+        font-size: 18px;
+
+        i {
+            padding: 25px; 
+        }
+
+        span {
+            margin-right: 45px;
+        }
+    }
+
+
+
+}
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
