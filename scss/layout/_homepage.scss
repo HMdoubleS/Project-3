@@ -1,30 +1,87 @@
 @media screen and (max-width: 767px) {
+    * {
+        box-sizing: border-box;
+        // padding: 0;
+        // margin: 0;
+    }
 
     .header__title {
         @include center;
     
         .header__logo {
-            height: 38px;
+            height: 58px;
             width: 60%;
             padding: 15px;
             margin: 0;
         }
     }
 
+/*-- LOCATION--*/
+
     .location {
         @include center;
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: lightgray;
+        padding: 3px;
+        
 
-        i {
-            padding: 25px; 
+        &__wrapper {
+            padding: 10px;
+            margin-left: 38px;
         }
 
-        span {
-            margin-right: 45px;
+        i {
+            padding-right: 20px;
+        }
+
+        &__search {
+            align-items: center;
+            width: 60%;
+            border: none;
+            font-weight: 900;
+            background-color: lightgray;
+            // outline: 3px solid red;
+            // padding-bottom: 10px;
+            // margin-bottom: 15px;
+        }
+
+        &__search:focus {
+            border: none;
+            outline: none;
+
         }
     }
 
+/*-- BOOKING--*/
+
+    .booking {
+        text-align: center;
+    
+        &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #EAEAEA;
+        }
+    
+            &__title {
+                padding-top: 10px;
+            }
+
+            &__info {
+            width: 80%;
+            font-weight: 300;
+            }
+
+            .btn-gradient {
+            border-radius: 30px;
+            padding: 18px;
+            margin: 10px 0 40px 0;
+            font-size: 14px;
+            background: linear-gradient();
+            }
+    }
 
 
 }
@@ -32,7 +89,6 @@
 
     
     
-
 
 
 
