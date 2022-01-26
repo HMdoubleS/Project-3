@@ -4,12 +4,12 @@
         // padding: 0;
         // margin: 0;
     }
-
+    
     .header__title {
         @include center;
     
         .header__logo {
-            height: 58px;
+            height: 60px;
             width: 60%;
             padding: 15px;
             margin: 0;
@@ -30,26 +30,23 @@
             margin-left: 38px;
         }
 
-        i {
-            padding-right: 20px;
-        }
+            i {
+                padding-right: 20px;
+            }
 
-        &__search {
-            align-items: center;
-            width: 60%;
-            border: none;
-            font-weight: 900;
-            background-color: lightgray;
-            // outline: 3px solid red;
-            // padding-bottom: 10px;
-            // margin-bottom: 15px;
-        }
+                &__search {
+                    align-items: center;
+                    width: 60%;
+                    border: none;
+                    font-weight: 900;
+                    background-color: lightgray;
+                }
 
-        &__search:focus {
-            border: none;
-            outline: none;
+                &__search:focus {
+                    border: none;
+                    outline: none;
 
-        }
+                }
     }
 
 /*-- BOOKING--*/
@@ -68,17 +65,24 @@
                 padding-top: 10px;
             }
 
-            &__info {
-            width: 80%;
-            font-weight: 300;
-            }
+                &__info {
+                    width: 80%;
+                    font-weight: 300;
+                }
 
             .btn-gradient {
             border-radius: 30px;
             padding: 18px;
             margin: 10px 0 40px 0;
             font-size: 14px;
-            background: linear-gradient();
+            color: white;
+            border: none;
+            box-shadow: 5px 5px 5px gray;
+            background: linear-gradient(to bottom right, $secondary-clr, $primary-clr);
+            }
+
+            .btn-gradient:hover {
+                filter: brightness(90%);
             }
     }
 
