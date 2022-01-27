@@ -34,8 +34,8 @@
         </section>
         
         <section class="explanation">
-            <div class="explanation-wrap">
-                <h2>How it works</h2>
+            <div class="explanation__wrap">
+                <h2 class="explanation__title">How it works</h2>
 
                 <div class="explanation__card">
                 <div class="explanation__card-num">1</div>
@@ -43,8 +43,9 @@
                         <i class="fas fa-mobile-alt"></i><span>Choose a restaurant</span>
                     </div>
                 </div>
+
                 <div class="explanation__card">
-                <div class="explanation-card-num">2</div>
+                <div class="explanation__card-num">2</div>
                     <div class="explanation__card-text">
                         <i class="fas fa-list"></i><span>Create your menu</span>
                     </div>
@@ -60,10 +61,10 @@
         
         <section class="restaurant">
             <div class="restaurant-wrap">
-                <h2>Restaurants</h2>
+                <h2 class="restaurant__title">Restaurants</h2>
                 <div class="restaurant__container">
                     <div class="restaurant__card">
-                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant__card-img" alt="The Full Palette" height="150"/></a>
+                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant__card-img" alt="The Full Palette"/></a>
                         <section class="restaurant__card-label">New</section>
                         <div class="restaurant__card-info">
                             <h3>The Full Palette</h3>
@@ -76,7 +77,7 @@
 
             
                     <div class="restaurant__card">
-                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant--__card-img" alt="The Enchanted Plate" height="150"/></a>
+                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant__card-img" alt="The Enchanted Plate"/></a>
                         <section class="restaurant__card-label">New</section>
                         <div class="restaurant__card-info">
                             <h3>The Enchanted Plate</h3>
@@ -88,7 +89,7 @@
                     </div>
 
                     <div class="restaurant__card">
-                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant__card-img" alt="Bastille" height="150"/></a>
+                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant__card-img" alt="Bastille"/></a>
                         <div class="restaurant__card-info">
                             <h3>Bastille</h3>
                             <h4>New York</h4>
@@ -99,7 +100,7 @@
                     </div>
                
                     <div class="restaurant__card">
-                        <a href="/menu-gourmand.html"><img src="images/restaurants/le-gourmand.jpg" class="restaurant__card-img" alt="Le Gourmand" height="150"/></a>
+                        <a href="/menu-gourmand.html"><img src="images/restaurants/le-gourmand.jpg" class="restaurant__card-img" alt="Le Gourmand"/></a>
                         <div class="restaurant__card-info">
                             <h3>Le Gourmand</h3>
                             <h4>New York</h4>
@@ -115,15 +116,13 @@
 
     <footer class="footer">
         <div class="container__footer">
-            <section class="footer__title">
-                <img src="images/logo/ohmyfood.png" alt="logo" class="footer__logo"/>
-            </section>
+            <h2 class="footer__title">ohmyfood</h2>
         </div>
         <ul class="footer__nav">
             <li class="footer__nav-item"><a href="#"><i class="fas fa-utensils"></i>Suggest a restaurant</a></li>
             <li class="footer__nav-item"><a href="#"><i class="fas fa-hands-helping"></i>Become a partner</a></li>
             <li class="footer__nav-item"><a href="#">Legal</a></li>
-            <li class="footer__nav-item"><a href="#">Contact</a></li>
+            <li class="footer__nav-item" id="footer__nav-item-4"><a href="#">Contact</a></li>
         </ul>
     </footer>
 </body>
