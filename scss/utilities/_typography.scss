@@ -8,6 +8,11 @@ h2 {
 
 h3 {
     font-family: $font-text;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: $font-text;
 }
 
 p {
@@ -18,7 +23,12 @@ p {
     font-family: $font-text;
 }
 
+
 .button {
+    font-family: $font-text;
+}
+
+.restaurant__card-label {
     font-family: $font-text;
 }
 
