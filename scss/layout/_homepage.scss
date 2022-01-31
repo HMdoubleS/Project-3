@@ -72,14 +72,7 @@
         }
 
         .btn-gradient {
-            border-radius: 25px;
-            padding: 13px 20px;
-            margin: 10px 0 40px 0;
-            font-size: 14px;
-            color: white;
-            border: none;
-            box-shadow: 5px 5px 5px gray;
-            background: linear-gradient(to bottom right, $secondary-clr, $primary-clr);
+            @include btn-gradient;
         }
 
         .btn-gradient:hover {
@@ -94,32 +87,59 @@
         width: 100%;
     
         &__wrap {
+            display: flex;
+            flex-direction: column;
             margin-left: 30px;
         }
 
         &__title {
+            margin-left: 30px;
             padding: 35px 0 15px 0;
             font-weight: 500;
             font-size: 20px;
         }
-        
-        &__card-num {
-            color: white;
-            padding-left: 5px;
-            width: 5%;
-            align-items: center;
-            border-radius: 100px;
-            background: $primary-clr;
+        span {
+            display: inline-block;
         }
 
-        &__card-text {
+        &__card-num {
+            color: white;
+            padding-top: 3px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 100px;
+            background: $primary-clr;
+
+            position:absolute;
+            left: 20px;
+        }
+
+        &__card {
             background-color: #EAEAEA;
+            border: none;
             width: 90%;
             padding: 20px;
             border-radius: 25px;
             margin-bottom: 20px;
-            outline: 2px solid blue;
+            text-align: left;
+            box-shadow: 2px 2px 2px gray;
         }
+
+        &__card:hover {
+            background-color: #E6D1F2;
+        }
+
+        &__icon {
+            padding: 0 10px;
+            width: 30px;
+            // outline: 1px solid blue;
+        }
+
+        &__icon:hover {
+            color: $primary-clr;
+        }
+
 
     }
 
@@ -170,82 +190,49 @@
         &__card-img {
             align-items: center;
             width: 100%;
-            height: 145px;
+            height: 150px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             object-fit: cover;
             // object-position: 0px -30px;
         }
 
+        #palette {
+            object-position: left bottom;
+        }
+        #enchanted {
+            object-position: 0px -137px;
+        }
+        #bastille {
+            object-position: 5px -50px;
+        }
         #gourmand {
             object-position: 0px -65px;
         }
 
+
         &__card-label {
             background-color: $tertiary-clr;
             margin: 0;
-            width: 85px;
+            width: 75px;
             padding: 5px 0;
             text-align: center;
+            font-size: 12px;
 
             position: absolute;
             top: 10px;
-            right: 10px;
+            right: 8px;
         }
 
         &__card-icon {
             display: inline-block;
             position: absolute;
 
-            left: 85%;
+            left: 87%;
             top: 80%;
         }
-    }
-
-/*-- FOOTER--*/
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        padding-top: 25px;
-        background-color: black;
-        color: white;
-
-        .footer__title {
-            margin-left: 30px;
-            margin-bottom: 15px;
-            font-size: 16px;
-            font-weight: 500;
-        }
-            &__nav {
-                margin-left: 30px;
-            }
-
-            &__nav-item {
-                margin-bottom: 8px;
-                font-size: 14px;
-            }
-
-            #footer__nav-item-4 {
-                padding-bottom: 20px;
-            }
-    }     
-    
-    ul {
-        list-style-type: none;
-    }
         
-    a {
-        text-decoration: none;
-        color: white;
     }
-
-    i {
-        margin-right: 10px;
-    }
-    
-    
-
 
 }
 

@@ -27,36 +27,32 @@
     <main>
         <section class="booking">
             <div class="booking__wrapper">
-                <h3 class="booking__title">Book the menu you like</h3>
+                <h2 class="booking__title">Book the menu you like</h2>
                 <p class="booking__info">Discover top-of-the-art restaurants we picked for you</p>
                 <button type="button" class="btn-gradient">Explore our restaurants</button>
             </div>
         </section>
         
         <section class="explanation">
+            <h2 class="explanation__title">How it works</h2>
+
             <div class="explanation__wrap">
-                <h2 class="explanation__title">How it works</h2>
 
-                <div class="explanation__card-num">1</div>
-                <div class="explanation__card">
-                    <div class="explanation__card-text">
-                        <i class="fas fa-mobile-alt"></i><span>Choose a restaurant</span>
-                    </div>
-                </div>
-
-                <div class="explanation__card-num">2</div>
-                <div class="explanation__card">
-                    <div class="explanation__card-text">
-                        <i class="fas fa-list"></i><span>Create your menu</span>
-                    </div>
-                </div>
-
-                <div class="explanation__card-num">3</div>
-                <div class="explanation__card">
-                    <div class="explanation__card-text">
-                        <i class="fas fa-store"></i><span>Go enjoy it at the restaurant</span>
-                    </div>
-                </div>
+                <button class="explanation__card">
+                    <span class="explanation__card-num">1</span>
+                    <i class="fas fa-mobile-alt explanation__icon"></i>
+                    <span>Choose a restaurant</span>
+                </button>
+                <button class="explanation__card">
+                    <span class="explanation__card-num">2</span>
+                    <i class="fas fa-list explanation__icon"></i>
+                    <span>Create your menu</span>
+                </button>
+                <button class="explanation__card">
+                    <span class="explanation__card-num">3</span>
+                    <i class="fas fa-store explanation__icon"></i>
+                    <span>Go enjoy it at the restaurant</span>
+                </button>
             </div>
         </section>
         
@@ -65,7 +61,7 @@
                 <h2 class="restaurant__title">Restaurants</h2>
                 <div class="restaurant__container">
                     <div class="restaurant__card">
-                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant__card-img" alt="The Full Palette"/></a>
+                        <a href="/menu-palette.html"><img src="images/restaurants/the-full-palette.jpg" class="restaurant__card-img" id="palette" alt="The Full Palette"/></a>
                         <section class="restaurant__card-label">New</section>
                         <div class="restaurant__card-info">
                             <h2>The Full Palette</h2>
@@ -78,7 +74,7 @@
 
             
                     <div class="restaurant__card">
-                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant__card-img" alt="The Enchanted Plate"/></a>
+                        <a href="/menu-enchanted.html"><img src="images/restaurants/the-enchanted-plate.jpg" class="restaurant__card-img" id="enchanted" alt="The Enchanted Plate"/></a>
                         <section class="restaurant__card-label">New</section>
                         <div class="restaurant__card-info">
                             <h2>The Enchanted Plate</h2>
@@ -90,7 +86,7 @@
                     </div>
 
                     <div class="restaurant__card">
-                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant__card-img" alt="Bastille"/></a>
+                        <a href="/menu-bastille.html"><img src="images/restaurants/bastille.jpg" class="restaurant__card-img" id="bastille" alt="Bastille"/></a>
                         <div class="restaurant__card-info">
                             <h2>Bastille</h2>
                             <h4>New York</h4>
