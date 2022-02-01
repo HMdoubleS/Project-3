@@ -22,6 +22,9 @@
         margin: 15px 0;
     }
 }
+.menu__containers {
+    background-color: #EAEAEA;
+}
 
 .menu__main {
     display: flex;
@@ -35,8 +38,8 @@
 
     .menu__title {
         display: inline-flex;
-        font-size: 12px;
-        margin: 15px 0 20px 18px;
+        font-size: 14px;
+        margin: 15px 0 0 18px;
     }
 
     .menu__title-icon {
@@ -58,8 +61,11 @@
 }
 
 .menu__choices-title {
-    margin-left: 18px;
-    margin-bottom: 20px;
+    margin: 30px 0 20px 18px;
+    font-weight: 400;
+    padding-bottom: 3px;
+    border-bottom: solid 3px;
+    border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
 }
 
 .menu__card-item {
@@ -67,23 +73,28 @@
     margin-left: 5px;
     font-size: 11px;
     font-weight: 500; 
-    padding: 5px;
+    padding: 10px 5px 5px 5px;
+    // overflow: hidden;
+        // white-space: nowrap;
+        // text-overflow: ellipsis;
 }
 
 .menu__card-info {
     display: flex;
-    flex-wrap: none;
-    width: 90%;
+    width: 200px;
     margin-left: 5px;
     padding: 0 5px 8px 5px;
     font-size: 14px;
     font-weight: 300;
-    overflow: hidden;
+    // overflow: hidden;
+        white-space: nowrap;
+        // text-overflow: ellipsis;
 }
 .menu__card-price {
     position: absolute;
-    left: 80%;
+    left: 83%;
     font-weight: bold;
+    align-items: flex-end;
 }
 
 
