@@ -231,13 +231,14 @@
             right: 8px;
         }
 
-        &__card-icon{
+        &__card-icon {
             display: inline-block;
             position: absolute;
 
-            left: 87%;
-            top: 80%;
+            right: 3px;
+            bottom: 18px;
         }
+
         .far.fa-heart {
             cursor: pointer;
             font-size: 20px;
@@ -265,7 +266,7 @@
             bottom: 10px;
             background: #fff;
             transition: all .3s ease;
-            z-index: 2
+            z-index: 2;
         }
         
         .fas.fa-heart {
@@ -275,16 +276,16 @@
             bottom: 10px;
             background: linear-gradient(to top, #FF79DA, #9356DC);
             -webkit-background-clip: text;
-            color: transparent
+            color: transparent;
         }
         
-        .menu__heart {
+        .restaurant__heart {
             position: relative;
             top: 20px;
-            margin-left: 3em
+            margin-left: 20px;
         }
         
-        .menu__heart .box-hidden {
+        .restaurant__heart .box-hidden {
             background: #fff;
         }
      
