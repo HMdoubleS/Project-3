@@ -42,10 +42,6 @@
         font-size: 14px;
         margin: 15px 0 0 18px;
     }
-    
-    .menu__title-icon {
-    
-    }
 
     .menu__heart {
         cursor: pointer;
@@ -99,7 +95,7 @@
     margin-left: 18px;
     border-radius: 10px;
     width: 88%;
-    background-color: lightgray;
+    background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
     box-shadow: 2px 2px 2px gray;
@@ -143,15 +139,18 @@
 }
 
 
+.menu__order-btn {
+    @include center;
 
 
     .btn-gradient {
         @include btn-gradient;
+        padding: 13px 60px;
     }
 
     .btn-gradient:hover {
         filter: brightness(95%);
     }
 }
-
+}
 }

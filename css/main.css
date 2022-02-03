@@ -88,6 +88,7 @@
     padding-bottom: 20px;
   }
   .booking .btn-gradient {
+    cursor: pointer;
     border-radius: 25px;
     padding: 13px 20px;
     margin: 10px 0 40px 0;
@@ -145,6 +146,7 @@
     left: 20px;
   }
   .explanation__card {
+    cursor: pointer;
     background-color: #EAEAEA;
     border: none;
     width: 90%;
@@ -447,7 +449,7 @@
     margin-left: 18px;
     border-radius: 10px;
     width: 88%;
-    background-color: lightgray;
+    background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
     -webkit-box-shadow: 2px 2px 2px gray;
@@ -490,7 +492,19 @@
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .menu__main .btn-gradient {
+  .menu__main .menu__order-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu__main .menu__order-btn .btn-gradient {
+    cursor: pointer;
     border-radius: 25px;
     padding: 13px 20px;
     margin: 10px 0 40px 0;
@@ -501,8 +515,9 @@
             box-shadow: 5px 5px 5px gray;
     background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    padding: 13px 60px;
   }
-  .menu__main .btn-gradient:hover {
+  .menu__main .menu__order-btn .btn-gradient:hover {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
   }
