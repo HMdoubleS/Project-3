@@ -43,6 +43,10 @@
         margin: 15px 0 0 18px;
     }
     
+    .menu__title-icon {
+    
+    }
+
     .menu__heart {
         cursor: pointer;
         font-size: 20px;
@@ -65,12 +69,12 @@
         position: absolute;
         width: 20px;
         height: 20px;
-        left: 60px;
+        left: 58px;
         bottom: 10px;
         background: #EAEAEA;
         transition: all .3s ease;
         z-index: 2;
-        // color: transparent;
+        color: transparent;
     }
 
     .menu__heart-hidden {
@@ -80,7 +84,7 @@
         bottom: 10px;
         background: linear-gradient(to top, #FF79DA, #9356DC);
         -webkit-background-clip: text;
-        color: transparent;
+        // color: transparent;
         }
 
         .menu__title-heart {
