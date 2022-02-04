@@ -78,6 +78,7 @@
 
         .btn-gradient:hover {
                 filter: brightness(95%);
+                transform: scale(1.2);
         }
     }
 
@@ -99,6 +100,7 @@
             font-weight: 500;
             font-size: 20px;
         }
+
         span {
             display: inline-block;
         }
@@ -117,7 +119,6 @@
         }
 
         &__card {
-            cursor: pointer;
             background-color: #EAEAEA;
             border: none;
             width: 90%;
@@ -141,8 +142,6 @@
         &__icon:hover {
             color: $primary-clr;
         }
-
-
     }
 
 /*-- RESTAURANT CARD--*/
@@ -195,6 +194,7 @@
         &__card-img-3,
         &__card-img-4 {
             align-items: center;
+            z-index: 8;
             width: 100%;
             height: 150px;
             border-top-left-radius: 15px;
@@ -211,11 +211,11 @@
         }
 
         &__card-img-3 {
-            object-position: 5px -50px;
+            object-position: 0px -50px;
         }
 
         &__card-img-4 {
-            object-position: 0px -65px;
+            object-position: 0px -20px;
         }
 
 
@@ -231,6 +231,8 @@
             top: 10px;
             right: 8px;
         }
+
+/*-- HEART--*/
 
         &__card-icon {
             display: inline-block;
@@ -280,11 +282,11 @@
             color: transparent;
         }
         
-        .restaurant__heart {
-            position: relative;
-            top: 20px;
-            margin-left: 20px;
-        }
+        // .restaurant__heart {
+        //     position: relative;
+        //     top: 20px;
+        //     margin-left: 20px;
+        // }
         
         .restaurant__heart .box-hidden {
             background: #fff;
