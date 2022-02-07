@@ -10,155 +10,158 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<header class="menu__header">
-    <section class="header__title">
-        <h1>ohmyfood</h1>
-    </section>
+<header class="header__menu">
     <section class="header__return">
-        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    </section> 
+        <a href="./index.html"></a>
+        <i class="fas fa-arrow-left header__return"></i>
+    </section>
+    <h1 class="header__title">ohmyfood</h1>
 </header>
 
 <main>
-    <div class="menu">
+    <div class="menu__main">
         <section class="menu__image">
-            <img src ="images/restaurants/le-gourmand.jpg" class="menu__image" height="200"/>
+            <img src="images/restaurants/le-gourmand.jpg" class="menu__image"/>
         </section>
+
+        <section class="menu__containers">
+
         <div class="menu__title">
-            <div class="menu__title-container">
-                <h1>Le Gourmand</h1>
-                <section class="menu__title-icon">
-                    <i class="far fa-heart"></i>
-                </section>
-            </div>
+            <h1>Le Gourmand</h1>
         </div>
 
+        <div class="menu__title-icon">
+            <i class="far fa-heart outline"></i>
+            <i class="fas fa-heart solid"></i>
+        </div>
+           
+        
         <section class="menu__choices">
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>entrees</p>
-                </div>
+            
+                
+                <h3 class="menu__choices-title">entrees</h3>
+                
                 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Tuna Carpaccio</h3>
+                        <h2>Tuna Carpaccio</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>seasoned with yuzu <span class="text-bold">25&#8364;</span></p>
+                        <p>seasoned with yuzu <span class="menu__card-price">25&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Crunchy Lobster Croquettes</h3>
+                        <h2>Crunchy Lobster Croquets</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with seasonal vegetables <span class="text-bold">35&#8364;</span></p>
+                        <p>with seasonal vegetables <span class="menu__card-price">35&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Mushroom Soup</h3>
+                        <h2>Mushroom Soup</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with truffles <span class="text-bold">20&#8364;</span></p>
+                        <p>with truffles <span class="menu__card-price">20&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
-            </div> 
+             
 
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>main dish</p>
-                </div>
-
-                <div class="menu__card">
-                    <div class="menu__card-item">
-                        <h3>Roasted Chicken with Provincal Herbs</h3>
-                    </div>
-                    <div class="menu__card-info">
-                        <p>with truffle cream <span class="text-bold">40&#8364;</span></p>
-                    </div>
-                    <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
+            
+                
+                <h3 class="menu__choices-title">main dish</h3>
+                
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Roasted Lobster</h3>
+                        <h2>Roast Chicken with Provincal Herbs</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with seasonal vegetables <span class="text-bold">35&#8364;</span></p>
+                        <p>with truffle cream <span class="menu__card-price">40&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Angus Beef Ribs</h3>
+                        <h2>Roasted Lobster</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with mashed parsnips <span class="text-bold">44&#8364;</span></p>
+                        <p>with seasonal vegetables <span class="menu__card-price">35&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>dessert</p>
-                </div>
-
-                <div class="menu__card">
-                    <div class="menu__card-item">
-                        <h3>Assorted Dessert Plate</h3>
-                    </div>
-                    <div class="menu__card-info">
-                        <p>Chef's choice <span class="text-bold">18&#8364;</span></p>
-                    </div>
-                    <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Crème brulée</h3>
+                        <h2>Angus Beef Ribs</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>revisited <span class="text-bold">22&#8364;</span></p>
+                        <p>with mashed parsnips <span class="menu__card-price">44&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
+                    </div>
+                </div>
+            
+
+            
+                
+                <h3 class="menu__choices-title">dessert</h3>
+                
+
+                <div class="menu__card">
+                    <div class="menu__card-item">
+                        <h2>Assorted Dessert Plate</h2>
+                    </div>
+                    <div class="menu__card-info">
+                        <p>Chef's choice <span class="menu__card-price">18&#8364;</span></p>
+                    </div>
+                    <div class="menu__card-select">
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
+                    </div>
+                </div>
+
+                <div class="menu__card">
+                    <div class="menu__card-item">
+                        <h2>Crème brulée</h2>
+                    </div>
+                    <div class="menu__card-info">
+                        <p>revisited <span class="menu__card-price">22&#8364;</span></p>
+                    </div>
+                    <div class="menu__card-select">
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item"> 
-                        <h3>Tiramisu</h3>
+                        <h2>Tiramisu</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with hazelnuts <span class="text-bold">23&#8364;</span></p>
+                        <p>with hazelnuts <span class="menu__card-price">23&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
                     </div>
-                </div>
-            </div>
+                
+        </section>   
         </section>
 
         <div class="menu__order-btn">
@@ -178,4 +181,3 @@
         <li class="footer__nav-item" id="footer__nav-item-4"><a href="#">Contact</a></li>
     </ul>
 </footer>
-    

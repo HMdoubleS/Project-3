@@ -69,12 +69,26 @@
     color: white;
   }
   .footer .footer__title {
-    margin-left: 30px;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 25px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
   }
   .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin-left: 30px;
   }
   .footer__nav-item {
@@ -83,6 +97,7 @@
   }
   .footer #footer__nav-item-4 {
     padding-bottom: 20px;
+    margin-right: 50px;
   }
   ul {
     list-style-type: none;
@@ -244,7 +259,7 @@
   .explanation__card {
     background-color: #EAEAEA;
     border: none;
-    width: 90%;
+    width: 95%;
     padding: 20px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -712,6 +727,7 @@
     position: absolute;
     top: 4%;
     left: 10%;
+    z-index: 10;
   }
   .header__menu .header__title {
     text-align: center;
@@ -729,6 +745,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     /*-- HEART--*/
+    /* css for solid heart before the hover */
+    /* css for solid heart after the hover */
+    /* css for the outline heart before the hover */
+    /* css for the outline heart after the hover */
     /*-- CARDS--*/
   }
   .menu__main .menu__image {
@@ -743,10 +763,47 @@
     font-size: 14px;
     margin: 15px 0 0 18px;
   }
+  .menu__main .menu__title-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 53.2%;
+    right: 13.5%;
+    font-size: 20px;
+  }
+  .menu__main .solid {
+    position: absolute;
+    opacity: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
+  .menu__main .menu__title-icon:hover .solid {
+    opacity: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
+  .menu__main .outline {
+    position: absolute;
+    opacity: 100%;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
+  .menu__main .menu__title-icon:hover .outline {
+    opacity: 0;
+    -webkit-transition: opacity 3000ms;
+    transition: opacity 3000ms;
+  }
   .menu__main .menu__card {
     margin-left: 18px;
     border-radius: 10px;
-    width: 88%;
+    width: 90%;
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
@@ -770,6 +827,9 @@
     font-size: 11px;
     font-weight: 500;
     padding: 10px 5px 5px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .menu__main .menu__card-info {
     display: -webkit-box;
@@ -780,7 +840,9 @@
     padding: 0 5px 8px 5px;
     font-size: 14px;
     font-weight: 300;
+    overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .menu__main .menu__card-price {
     position: absolute;
@@ -800,6 +862,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #EAEAEA;
   }
   .menu__main .menu__order-btn .btn-gradient {
     cursor: pointer;

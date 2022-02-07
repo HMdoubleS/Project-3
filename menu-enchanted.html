@@ -10,167 +10,168 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<header class="menu__header">
-    <section class="header__title">
-        <h1>ohmyfood</h1>
-    </section>
+<header class="header__menu">
     <section class="header__return">
-        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    </section> 
+        <a href="./index.html"></a>
+        <i class="fas fa-arrow-left header__return"></i>
+    </section>
+    <h1 class="header__title">ohmyfood</h1>
 </header>
 
 <main>
     <div class="menu__main">
         <section class="menu__image">
-            <img src="images/restaurants/the-enchanted-plate.jpg" class="menu__image" height="200"/>
+            <img src="images/restaurants/the-enchanted-plate.jpg" class="menu__image"/>
         </section>
+
+        <section class="menu__containers">
+
         <div class="menu__title">
-            <div class="menu__title-container">
-                <h1>The Enchanted Plate</h1>
-                <section class="menu__title-icon">
-                    <i class="far fa-heart"></i>
-                </section>
-            </div>
+            <h1>The Enchanted Plate</h1>
         </div>
 
+        <div class="menu__title-icon">
+            <i class="far fa-heart outline"></i>
+            <i class="fas fa-heart solid"></i>
+        </div>
+           
+        
         <section class="menu__choices">
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>entrees</p>
-                </div>
+            
+                
+                <h3 class="menu__choices-title">entrees</h3>
+                
                 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Foie Gras Ravioli</h3>
+                        <h2>Foie Gras Ravioli</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with truffle cream <span class="text-bold">25&#8364;</span></p>
+                        <p>with truffle cream <span class="menu__card-price">25&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Oscietra Caviar</h3>
+                        <h2>Oscietra Caviar</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with buckwheat blinis <span class="text-bold">35&#8364;</span></p>
+                        <p>with buckwheat blinis <span class="menu__card-price">35&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Lobster and Leek Foam</h3>
+                        <h2>Lobster and Leek Foam</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>marinated with orange zest <span class="text-bold">20&#8364;</span></p>
+                        <p>marinated with orange zest <span class="menu__card-price">20&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
+                    </div>
+                </div>
+             
+                <div class="menu__card">
+                    <div class="menu__card-item">
+                        <h2>Duck Foie Gras</h2>
+                    </div>
+                    <div class="menu__card-info">
+                        <p>with fig jam and grilled baguette <span class="menu__card-price">20&#8364;</span></p>
+                    </div>
+                    <div class="menu__card-select">
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
+                    </div>
+                </div>
+            
+                
+                <h3 class="menu__choices-title">main dish</h3>
+                
+
+                <div class="menu__card">
+                    <div class="menu__card-item">
+                        <h2>Fresh Buttered Scallops</h2>
+                    </div>
+                    <div class="menu__card-info">
+                        <p>with white celery puree <span class="menu__card-price">40&#8364;</span></p>
+                    </div>
+                    <div class="menu__card-select">
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Duck Foie Gras</h3>
+                        <h2>Pan-Fried Lobster</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with fig jam and grilled baguette <span class="text-bold">35&#8364;</span></p>
+                        <p>with mashed sweet potatoes <span class="menu__card-price">35&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>main dish</p>
-                </div>
-
-                <div class="menu__card">
-                    <div class="menu__card-item">
-                        <h3>Fresh Buttered Scallops</h3>
-                    </div>
-                    <div class="menu__card-info">
-                        <p>with white celery puree <span class="text-bold">40&#8364;</span></p>
-                    </div>
-                    <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Pan-Fried Lobster</h3>
+                        <h2>Braised Ox Tail</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with mashed sweet potatoes <span class="text-bold">35&#8364;</span></p>
+                        <p>with wild rice and lemon zest <span class="menu__card-price">44&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle" aria-hidden="true"></i></span> -->
+                    </div>
+                </div>
+            
+
+            
+                
+                <h3 class="menu__choices-title">dessert</h3>
+                
+
+                <div class="menu__card">
+                    <div class="menu__card-item">
+                        <h2>Chocolate and Hazelnut Macaroons</h2>
+                    </div>
+                    <div class="menu__card-info">
+                        <p>with caramel butter ice cream <span class="menu__card-price">18&#8364;</span></p>
+                    </div>
+                    <div class="menu__card-select">
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item">
-                        <h3>Braised Ox Tail</h3>
+                        <h2>Baba au rhum</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>with wild rice and lemon zest <span class="text-bold">44&#8364;</span></p>
+                        <p>with lemon drizzle <span class="menu__card-price">22&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu__choices-container">
-                <div class="menu__choices-title">
-                    <p>dessert</p>
-                </div>
-
-                <div class="menu__card">
-                    <div class="menu__card-item">
-                        <h3>Paris-Brest</h3>
-                    </div>
-                    <div class="menu__card-info">
-                        <p>with caramel butter ice cream <span class="text-bold">18&#8364;</span></p>
-                    </div>
-                    <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
-                    </div>
-                </div>
-
-                <div class="menu__card">
-                    <div class="menu__card-item">
-                        <h3>Baba au rhum</h3>
-                    </div>
-                    <div class="menu__card-info">
-                        <p>with lemon drizzle <span class="text-bold">22&#8364;</span></p>
-                    </div>
-                    <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
                     </div>
                 </div>
 
                 <div class="menu__card">
                     <div class="menu__card-item"> 
-                        <h3>Lemon Meringue Pie</h3>
+                        <h2>Lemon Meringue Pie</h2>
                     </div>
                     <div class="menu__card-info">
-                        <p>decontructed <span class="text-bold">23&#8364;</span></p>
+                        <p>deconstructed <span class="menu__card-price">23&#8364;</span></p>
                     </div>
                     <div class="menu__card-select">
-                        <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span>
+                        <!-- <span class="menu__card-icon"><i class="fas fa-check-circle"></i></span> -->
                     </div>
-                </div>
-            </div>
+                
+        </section>   
         </section>
 
         <div class="menu__order-btn">

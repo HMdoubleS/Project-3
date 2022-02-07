@@ -65,12 +65,17 @@ i {
     color: white;
 
     .footer__title {
-        margin-left: 30px;
+        text-align: center;
+        justify-content: center;
+        margin-right: 25px;
         margin-bottom: 15px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
     }
         &__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
             margin-left: 30px;
         }
 
@@ -81,6 +86,7 @@ i {
 
         #footer__nav-item-4 {
             padding-bottom: 20px;
+            margin-right: 50px;
         }
 }     
 
