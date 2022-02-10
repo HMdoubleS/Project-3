@@ -1,5 +1,141 @@
 /* color */
 /* font */
+.loader {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  position: absolute;
+  z-index: 20;
+  -webkit-animation: loading-disparition .5s 3s ease-in forwards;
+          animation: loading-disparition .5s 3s ease-in forwards;
+}
+
+.loader .loader i {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loader .fa-wine-glass {
+  -webkit-animation: foodmvt 1.5s ease-in;
+          animation: foodmvt 1.5s ease-in;
+  color: #9356DC;
+}
+
+.loader .fa-utensils {
+  -webkit-animation: foodmvt 1.5s 120ms ease-in;
+          animation: foodmvt 1.5s 120ms ease-in;
+  color: #FF79DA;
+}
+
+.loader .fa-carrot {
+  -webkit-animation: foodmvt 1.5s 280ms ease-in;
+          animation: foodmvt 1.5s 280ms ease-in;
+  color: #99E2D0;
+}
+
+@-webkit-keyframes foodmvt {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  25% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  30% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  60% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes foodmvt {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  25% {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+    -webkit-transform: scale(0.8, 1.2);
+            transform: scale(0.8, 1.2);
+  }
+  30% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  60% {
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes loading-disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes loading-disparition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   * {
     -webkit-box-sizing: border-box;
@@ -415,8 +551,8 @@
        object-position: 0px -50px;
   }
   .restaurant__card-img-4 {
-    -o-object-position: 0px -20px;
-       object-position: 0px -20px;
+    -o-object-position: 0px -50px;
+       object-position: 0px -50px;
   }
   .restaurant__card-label {
     background-color: #99E2D0;
@@ -1482,7 +1618,7 @@
   }
   .menu__main .menu__image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     z-index: 10;
   }
   .menu__main .menu__title {
@@ -1529,10 +1665,26 @@
     -webkit-transition: opacity 3000ms;
     transition: opacity 3000ms;
   }
+  .menu__main .menu__choices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu__main .menu__entrees,
+  .menu__main .menu__main-dish,
+  .menu__main .menu__dessert {
+    width: 100%;
+  }
   .menu__main .menu__card {
     margin-left: 18px;
     border-radius: 10px;
-    width: 90%;
+    width: 75%;
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
@@ -1542,6 +1694,7 @@
   .menu__main .menu__choices-title {
     margin: 30px 0 20px 18px;
     font-weight: 400;
+    width: 80%;
     padding-bottom: 3px;
     border-bottom: solid 3px;
     -o-border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;

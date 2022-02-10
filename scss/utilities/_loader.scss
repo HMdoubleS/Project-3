@@ -1,0 +1,80 @@
+.loader {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    z-index: 20;
+    animation: loading-disparition .5s 3s ease-in forwards;
+    
+    .loader i {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-wine-glass {
+        animation: foodmvt 1.5s ease-in;
+        color: #9356DC;  
+    }
+    
+    .fa-utensils {
+        animation: foodmvt 1.5s 120ms ease-in;
+        color: #FF79DA;
+    }
+          
+    .fa-carrot {
+        animation: foodmvt 1.5s 280ms ease-in;
+        color: #99E2D0;
+    }
+    
+    
+    @keyframes foodmvt {
+      
+        0% {
+            opacity: 0;
+        }
+             
+        5% {
+            transform: translateX(-300%);
+        }
+             
+        20% {
+            opacity: 1;
+            transform: scale(0);
+            transform: translateX(100%);
+        }
+             
+        25% {
+            transform: translateX(-5%);
+            transform: scale(0.8, 1.2);
+        }
+             
+        30% {
+            transform: translateX(0%);
+        }
+                
+        60% {
+            transform: translateY(40%);
+        }
+             
+        100% {
+            transform: translateY(0%);
+        }
+           
+    }
+                 
+    @keyframes loading-disparition {
+        from {
+            opacity:1;
+        }
+             
+        to {
+            opacity: 0;
+        }
+    }
+
+}
