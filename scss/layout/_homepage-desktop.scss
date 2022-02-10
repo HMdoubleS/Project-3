@@ -1,0 +1,286 @@
+@media screen and (min-width: 993px) {
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    // .loader {
+    //     @include loader;
+    // }
+    .header__title {
+        @include center;
+    
+        .header__logo {
+            height: 80px;
+            width: 25%;
+            padding: 15px;
+            margin: 0;
+        }
+    }
+
+    /*-- LOCATION--*/
+
+    .location {
+        @include center;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: lightgray;
+        padding: 3px;
+        box-shadow: inset 1px 5px 14px -14px gray;
+        
+        &__wrapper {
+            padding: 10px;
+            margin-left: 38px;
+        }
+
+        i {
+            padding-right: 20px;
+        }
+
+        &__search {
+            align-items: center;
+            width: 60%;
+            border: none;
+            font-weight: 900;
+            background-color: lightgray;
+        }
+
+        &__search:focus {
+            border: none;
+            outline: none;
+
+        }
+    }
+
+    /*-- BOOKING--*/
+
+    .booking {
+        text-align: center;
+    
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #EAEAEA;
+            }
+    
+        &__title {
+            padding: 20px 0;
+        }
+
+        &__info {
+            width: 80%;
+            font-weight: 300;
+            margin-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        .btn-gradient {
+            @include btn-gradient;
+            margin: 30px 80px 25px 0;
+        }
+
+        .btn-gradient:hover {
+                filter: brightness(90%);
+        }
+    }
+
+    /*-- EXPLANATION--*/
+
+    .explanation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+        &__wrap {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30px;
+        }
+
+        &__title {
+            margin-left: 30px;
+            padding: 35px 0 15px 0;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        &__card-num {
+            // display: flex;
+            // flex-direction: row;
+            color: white;
+            padding-top: 3px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 100px;
+            background: $primary-clr;
+            margin-left: 55px;
+            position:absolute;
+            left: 20px;
+        }
+
+        &__card {
+            background-color: #EAEAEA;
+            border: none;
+            width: 25%;
+            padding: 20px;
+            border-radius: 25px;
+            margin: 0 20px 45px 55px;
+            text-align: left;
+            box-shadow: 2px 2px 2px gray;
+        }
+
+        &__card:hover {
+            background-color: #E6D1F2;
+            .explanation__icon {
+                color: $primary-clr;
+            }
+        }
+
+        &__icon {
+            padding: 0 10px;
+            width: 30px;
+        }
+
+    }
+
+    /*-- RESTAURANT CARD--*/
+
+    .restaurant {
+        background-color: #EAEAEA;
+    
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-left: 30px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-top: 30px;
+        }
+
+        &__card {
+            position: relative;
+            background-color: #fff;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            width: 300px;
+            height: auto;
+            box-shadow: 2px 5px 5px lightgray;
+        }
+        
+        &__card-info {
+            margin-left: 10px;
+            padding: 10px 0 15px 0;
+        }
+        h2 {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        h4 {
+            margin-top: 5px;
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        &__card-img-1,
+        &__card-img-2,
+        &__card-img-3,
+        &__card-img-4 {
+            align-items: center;
+            z-index: 8;
+            width: 100%;
+            height: 150px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            object-fit: cover;
+        }
+
+        &__card-img-1 {
+            object-position: left bottom;
+        }
+
+        &__card-img-2 {
+            object-position: 0px -137px;
+        }
+
+        &__card-img-3 {
+            object-position: 0px -50px;
+        }
+
+        &__card-img-4 {
+            object-position: 0px -20px;
+        }
+
+
+        &__card-label {
+            background-color: $tertiary-clr;
+            margin: 0;
+            width: 75px;
+            padding: 5px 0;
+            text-align: center;
+            font-size: 12px;
+
+            position: absolute;
+            top: 10px;
+            right: 8px;
+        }
+
+        /*-- HEART--*/
+
+        &__card-icon {
+            display: inline-block;
+            position: absolute;
+            top: 76.8%;
+            right: 13.5%;
+            font-size: 20px;
+        }
+        /* css for solid heart before the hover */
+        .solid {
+            position: absolute;
+            opacity: 0;
+            background: linear-gradient(to top, #FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity 3000ms;
+        }
+
+        /* css for solid heart after the hover */   
+        .restaurant__card-icon:hover .solid {
+            opacity: 100%;
+            background: linear-gradient(to top, #FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity 3000ms; 
+        }
+
+        /* css for the outline heart before the hover */
+        .outline {
+            position: absolute;
+            opacity: 100%;
+            transition: opacity 3000ms;
+        }
+              
+          /* css for the outline heart after the hover */
+        .restaurant__card-icon:hover .outline {
+            opacity: 0;
+            transition: opacity 3000ms; 
+        }
+            
+    }
+
+}
