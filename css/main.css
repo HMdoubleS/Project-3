@@ -32,43 +32,40 @@
 
 .loader .fa-wine-glass {
   font-size: 5rem;
-  -webkit-animation: foodmvt 1.5s ease-in;
-          animation: foodmvt 1.5s ease-in;
+  -webkit-animation: foodmvt 2s ease-in;
+          animation: foodmvt 2s ease-in;
   color: #9356DC;
+}
+
+.loader .fa-hamburger {
+  font-size: 5rem;
+  -webkit-animation: foodmvt 2s 150ms ease-in;
+          animation: foodmvt 2s 150ms ease-in;
+  color: #FF79DA;
 }
 
 .loader .fa-utensils {
   font-size: 5rem;
-  -webkit-animation: foodmvt 1.5s 120ms ease-in;
-          animation: foodmvt 1.5s 120ms ease-in;
-  color: #FF79DA;
+  -webkit-animation: foodmvt 2s 300ms ease-in;
+          animation: foodmvt 2s 300ms ease-in;
+  color: #99E2D0;
 }
 
 .loader .fa-carrot {
   font-size: 5rem;
-  -webkit-animation: foodmvt 1.5s 280ms ease-in;
-          animation: foodmvt 1.5s 280ms ease-in;
-  color: #99E2D0;
-}
-
-.loader .fa-utensils {
-  font-size: 5rem;
-  -webkit-animation: foodmvt 1.5s 120ms ease-in;
-          animation: foodmvt 1.5s 120ms ease-in;
+  -webkit-animation: foodmvt 2s 330ms ease-in;
+          animation: foodmvt 2s 330ms ease-in;
   color: #FF79DA;
 }
 
-.loader .fa-utensils {
+.loader .fa-glass-cheers {
   font-size: 5rem;
-  -webkit-animation: foodmvt 1.5s 120ms ease-in;
-          animation: foodmvt 1.5s 120ms ease-in;
-  color: #FF79DA;
+  -webkit-animation: foodmvt 2s 500ms ease-in;
+          animation: foodmvt 2s 500ms ease-in;
+  color: #9356DC;
 }
 
 @-webkit-keyframes foodmvt {
-  0% {
-    opacity: 0;
-  }
   5% {
     -webkit-transform: translateX(-300%);
             transform: translateX(-300%);
@@ -101,9 +98,6 @@
 }
 
 @keyframes foodmvt {
-  0% {
-    opacity: 0;
-  }
   5% {
     -webkit-transform: translateX(-300%);
             transform: translateX(-300%);
