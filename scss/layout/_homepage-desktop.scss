@@ -91,13 +91,15 @@
     /*-- EXPLANATION--*/
 
     .explanation {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        // display: flex;
+        // flex-direction: row;
+        // width: 100%;
     
         &__wrap {
-            display: flex;
             flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
             margin-left: 30px;
         }
 
@@ -112,7 +114,7 @@
             display: inline-block;
         }
 
-        &__card-num {
+        &__num { 
             // display: flex;
             // flex-direction: row;
             color: white;
@@ -121,24 +123,26 @@
             height: 20px;
             text-align: center;
             border-radius: 100px;
-            background: $primary-clr;
+            background-color: $primary-clr;
             margin-left: 55px;
             position:absolute;
-            left: 20px;
+            left: -63px;
         }
 
-        &__card {
+        &__button {
             background-color: #EAEAEA;
+            position: relative;
             border: none;
-            width: 25%;
+            width: 29%;
             padding: 20px;
             border-radius: 25px;
-            margin: 0 20px 45px 55px;
+            margin-left: 25px;
+            // margin: 0 20px 45px 55px;
             text-align: left;
             box-shadow: 2px 2px 2px gray;
         }
 
-        &__card:hover {
+        &__button:hover {
             background-color: #E6D1F2;
             .explanation__icon {
                 color: $primary-clr;
@@ -146,6 +150,7 @@
         }
 
         &__icon {
+            font-size: 18px;
             padding: 0 10px;
             width: 30px;
         }
@@ -157,9 +162,14 @@
     .restaurant {
         background-color: #EAEAEA;
     
-        &__wrap {
+        // &__wrap {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+        &__container {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
         }
 
         &__title {
@@ -177,7 +187,7 @@
             margin-left: 30px;
             margin-bottom: 20px;
             border-radius: 15px;
-            width: 300px;
+            width: 45%;
             height: auto;
             box-shadow: 2px 5px 5px lightgray;
         }
@@ -211,19 +221,19 @@
         }
 
         &__card-img-1 {
-            object-position: left bottom;
+            object-position: 0px -120px;
         }
 
         &__card-img-2 {
-            object-position: 0px -137px;
+            object-position: 0px -285px;
         }
 
         &__card-img-3 {
-            object-position: 0px -50px;
+            object-position: 0px -150px;
         }
 
         &__card-img-4 {
-            object-position: 0px -20px;
+            object-position: 0px -175px;
         }
 
 

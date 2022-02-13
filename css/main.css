@@ -14,7 +14,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: black;
-  position: absolute;
+  position: fixed;
   z-index: 20;
   -webkit-animation: loading-disparition .5s 3s ease-in forwards;
           animation: loading-disparition .5s 3s ease-in forwards;
@@ -31,21 +31,38 @@
 }
 
 .loader .fa-wine-glass {
+  font-size: 5rem;
   -webkit-animation: foodmvt 1.5s ease-in;
           animation: foodmvt 1.5s ease-in;
   color: #9356DC;
 }
 
 .loader .fa-utensils {
+  font-size: 5rem;
   -webkit-animation: foodmvt 1.5s 120ms ease-in;
           animation: foodmvt 1.5s 120ms ease-in;
   color: #FF79DA;
 }
 
 .loader .fa-carrot {
+  font-size: 5rem;
   -webkit-animation: foodmvt 1.5s 280ms ease-in;
           animation: foodmvt 1.5s 280ms ease-in;
   color: #99E2D0;
+}
+
+.loader .fa-utensils {
+  font-size: 5rem;
+  -webkit-animation: foodmvt 1.5s 120ms ease-in;
+          animation: foodmvt 1.5s 120ms ease-in;
+  color: #FF79DA;
+}
+
+.loader .fa-utensils {
+  font-size: 5rem;
+  -webkit-animation: foodmvt 1.5s 120ms ease-in;
+          animation: foodmvt 1.5s 120ms ease-in;
+  color: #FF79DA;
 }
 
 @-webkit-keyframes foodmvt {
@@ -313,7 +330,13 @@ i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
   .explanation__title {
     margin-left: 30px;
@@ -324,32 +347,34 @@ i {
   .explanation span {
     display: inline-block;
   }
-  .explanation__card-num {
+  .explanation__num {
     color: white;
     padding-top: 3px;
     width: 20px;
     height: 20px;
     text-align: center;
     border-radius: 100px;
-    background: #9356DC;
+    background-color: #9356DC;
+    margin-left: 55px;
     position: absolute;
-    left: 20px;
+    left: -63px;
   }
-  .explanation__card {
+  .explanation__button {
     background-color: #EAEAEA;
+    position: relative;
     border: none;
-    width: 95%;
+    width: 80%;
     padding: 20px;
     border-radius: 25px;
-    margin-bottom: 20px;
+    margin: 0 0 15px 25px;
     text-align: left;
     -webkit-box-shadow: 2px 2px 2px gray;
             box-shadow: 2px 2px 2px gray;
   }
-  .explanation__card:hover {
+  .explanation__button:hover {
     background-color: #E6D1F2;
   }
-  .explanation__card:hover .explanation__icon {
+  .explanation__button:hover .explanation__icon {
     color: #9356DC;
   }
   .explanation__icon {
@@ -625,7 +650,7 @@ i {
   .explanation span {
     display: inline-block;
   }
-  .explanation__card-num {
+  .explanation__num {
     color: white;
     padding-top: 3px;
     width: 20px;
@@ -636,7 +661,7 @@ i {
     position: absolute;
     left: 20px;
   }
-  .explanation__card {
+  .explanation__button {
     background-color: #EAEAEA;
     border: none;
     width: 98%;
@@ -647,10 +672,10 @@ i {
     -webkit-box-shadow: 2px 2px 2px gray;
             box-shadow: 2px 2px 2px gray;
   }
-  .explanation__card:hover {
+  .explanation__button:hover {
     background-color: #E6D1F2;
   }
-  .explanation__card:hover .explanation__icon {
+  .explanation__button:hover .explanation__icon {
     color: #9356DC;
   }
   .explanation__icon {
@@ -897,24 +922,18 @@ i {
             filter: brightness(90%);
   }
   /*-- EXPLANATION--*/
-  .explanation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
   .explanation__wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     margin-left: 30px;
   }
   .explanation__title {
@@ -926,36 +945,38 @@ i {
   .explanation span {
     display: inline-block;
   }
-  .explanation__card-num {
+  .explanation__num {
     color: white;
     padding-top: 3px;
     width: 20px;
     height: 20px;
     text-align: center;
     border-radius: 100px;
-    background: #9356DC;
+    background-color: #9356DC;
     margin-left: 55px;
     position: absolute;
-    left: 20px;
+    left: -63px;
   }
-  .explanation__card {
+  .explanation__button {
     background-color: #EAEAEA;
+    position: relative;
     border: none;
-    width: 25%;
+    width: 29%;
     padding: 20px;
     border-radius: 25px;
-    margin: 0 20px 45px 55px;
+    margin-left: 25px;
     text-align: left;
     -webkit-box-shadow: 2px 2px 2px gray;
             box-shadow: 2px 2px 2px gray;
   }
-  .explanation__card:hover {
+  .explanation__button:hover {
     background-color: #E6D1F2;
   }
-  .explanation__card:hover .explanation__icon {
+  .explanation__button:hover .explanation__icon {
     color: #9356DC;
   }
   .explanation__icon {
+    font-size: 18px;
     padding: 0 10px;
     width: 30px;
   }
@@ -968,14 +989,13 @@ i {
     /* css for the outline heart before the hover */
     /* css for the outline heart after the hover */
   }
-  .restaurant__wrap {
+  .restaurant__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
   }
   .restaurant__title {
     margin-left: 30px;
@@ -991,7 +1011,7 @@ i {
     margin-left: 30px;
     margin-bottom: 20px;
     border-radius: 15px;
-    width: 300px;
+    width: 45%;
     height: auto;
     -webkit-box-shadow: 2px 5px 5px lightgray;
             box-shadow: 2px 5px 5px lightgray;
@@ -1022,20 +1042,20 @@ i {
        object-fit: cover;
   }
   .restaurant__card-img-1 {
-    -o-object-position: left bottom;
-       object-position: left bottom;
+    -o-object-position: 0px -120px;
+       object-position: 0px -120px;
   }
   .restaurant__card-img-2 {
-    -o-object-position: 0px -137px;
-       object-position: 0px -137px;
+    -o-object-position: 0px -285px;
+       object-position: 0px -285px;
   }
   .restaurant__card-img-3 {
-    -o-object-position: 0px -50px;
-       object-position: 0px -50px;
+    -o-object-position: 0px -150px;
+       object-position: 0px -150px;
   }
   .restaurant__card-img-4 {
-    -o-object-position: 0px -20px;
-       object-position: 0px -20px;
+    -o-object-position: 0px -175px;
+       object-position: 0px -175px;
   }
   .restaurant__card-label {
     background-color: #99E2D0;

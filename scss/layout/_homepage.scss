@@ -95,7 +95,10 @@
         &__wrap {
             display: flex;
             flex-direction: column;
-            margin-left: 30px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // margin-left: 30px;
         }
 
         &__title {
@@ -109,31 +112,35 @@
             display: inline-block;
         }
 
-        &__card-num {
+        &__num { 
+            // display: flex;
+            // flex-direction: row;
             color: white;
             padding-top: 3px;
             width: 20px;
             height: 20px;
             text-align: center;
             border-radius: 100px;
-            background: $primary-clr;
-
-            position:absolute;
-            left: 20px;
+            background-color: $primary-clr;
+            margin-left: 55px;
+            position: absolute;
+            left: -63px;
         }
 
-        &__card {
+        &__button {
             background-color: #EAEAEA;
+            position: relative;
             border: none;
-            width: 95%;
+            width: 80%;
             padding: 20px;
             border-radius: 25px;
-            margin-bottom: 20px;
+            margin: 0 0 15px 25px;
+            // margin: 0 20px 45px 55px;
             text-align: left;
             box-shadow: 2px 2px 2px gray;
         }
 
-        &__card:hover {
+        &__button:hover {
             background-color: #E6D1F2;
             .explanation__icon {
                 color: $primary-clr;
