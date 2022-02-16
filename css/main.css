@@ -16,8 +16,8 @@
   color: black;
   position: fixed;
   z-index: 20;
-  -webkit-animation: loading-disparition .5s 3s ease-in forwards;
-          animation: loading-disparition .5s 3s ease-in forwards;
+  -webkit-animation: disappear .5s 3s ease-in forwards;
+          animation: disappear .5s 3s ease-in forwards;
 }
 
 .loader .loader i {
@@ -46,22 +46,22 @@
 
 .loader .fa-utensils {
   font-size: 5rem;
-  -webkit-animation: foodmvt 2s 300ms ease-in;
-          animation: foodmvt 2s 300ms ease-in;
+  -webkit-animation: foodmvt 2s 200ms ease-in;
+          animation: foodmvt 2s 200ms ease-in;
   color: #99E2D0;
 }
 
 .loader .fa-carrot {
   font-size: 5rem;
-  -webkit-animation: foodmvt 2s 330ms ease-in;
-          animation: foodmvt 2s 330ms ease-in;
+  -webkit-animation: foodmvt 2s 250ms ease-in;
+          animation: foodmvt 2s 250ms ease-in;
   color: #FF79DA;
 }
 
 .loader .fa-glass-cheers {
   font-size: 5rem;
-  -webkit-animation: foodmvt 2s 500ms ease-in;
-          animation: foodmvt 2s 500ms ease-in;
+  -webkit-animation: foodmvt 2s 300ms ease-in;
+          animation: foodmvt 2s 300ms ease-in;
   color: #9356DC;
 }
 
@@ -129,20 +129,32 @@
   }
 }
 
-@-webkit-keyframes loading-disparition {
-  from {
+@-webkit-keyframes disappear {
+  0% {
     opacity: 1;
+    z-index: 20;
   }
-  to {
+  95% {
+    opacity: 0.9;
+    z-index: -1;
+  }
+  100% {
+    z-index: -20;
     opacity: 0;
   }
 }
 
-@keyframes loading-disparition {
-  from {
+@keyframes disappear {
+  0% {
     opacity: 1;
+    z-index: 20;
   }
-  to {
+  95% {
+    opacity: 0.9;
+    z-index: -1;
+  }
+  100% {
+    z-index: -20;
     opacity: 0;
   }
 }
@@ -1198,14 +1210,17 @@ i {
     transition: opacity 3000ms;
   }
   .menu__main .menu__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 18px;
     border-radius: 10px;
     width: 90%;
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
-    -webkit-box-shadow: 2px 2px 2px gray;
-            box-shadow: 2px 2px 2px gray;
+    -webkit-box-shadow: 5px 5px 2px gray;
+            box-shadow: 5px 5px 2px gray;
   }
   .menu__main .menu__choices-title {
     margin: 30px 0 20px 18px;
@@ -1216,40 +1231,82 @@ i {
        border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #99e2d0), color-stop(10%, #EAEAEA)) 100% 1;
        border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
   }
-  .menu__main .menu__card-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .menu__main .menu__text {
+    width: 100%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__text p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
     margin-left: 5px;
-    font-size: 11px;
+    font-weight: 300;
+    padding: 0 5px 8px 5px;
+  }
+  .menu__main .menu__text h2 {
+    margin-left: 5px;
+    font-size: 15px;
     font-weight: 500;
     padding: 10px 5px 5px 5px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
-  .menu__main .menu__card-info {
+  .menu__main .menu__holder {
+    width: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 200px;
-    margin-left: 5px;
-    padding: 0 5px 8px 5px;
-    font-size: 14px;
-    font-weight: 300;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    outline: 3px solid blue;
   }
-  .menu__main .menu__card-price {
-    position: absolute;
-    left: 83%;
+  .menu__main .menu__card:hover .menu__text {
+    width: 50%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: -webkit-transform 1000ms forwards;
+    transition: -webkit-transform 1000ms forwards;
+    transition: transform 1000ms forwards;
+    transition: transform 1000ms forwards, -webkit-transform 1000ms forwards;
+  }
+  .menu__main .menu__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-weight: bold;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    padding-left: 60px;
+    padding-top: 30px;
   }
-  .menu__main .menu__order-btn {
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-animation: spin 1000ms forward;
+            animation: spin 1000ms forward;
+  }
+  .menu__main .menu__spinner {
+    font-size: 1rem;
+    color: #99E2D0;
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+    -webkit-transition: -webkit-transform 1000ms forward;
+    transition: -webkit-transform 1000ms forward;
+    transition: transform 1000ms forward;
+    transition: transform 1000ms forward, -webkit-transform 1000ms forward;
+  }
+  .menu__main__order-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1261,7 +1318,7 @@ i {
             justify-content: center;
     background-color: #EAEAEA;
   }
-  .menu__main .menu__order-btn .btn-gradient {
+  .menu__main__order-btn .btn-gradient {
     cursor: pointer;
     border-radius: 25px;
     padding: 13px 20px;
@@ -1275,9 +1332,29 @@ i {
     background: linear-gradient(to bottom right, #FF79DA, #9356DC);
     padding: 13px 60px;
   }
-  .menu__main .menu__order-btn .btn-gradient:hover {
+  .menu__main__order-btn .btn-gradient:hover {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
   }
 }
 
@@ -1512,7 +1589,7 @@ i {
   }
   .menu__main .menu__image {
     width: 100%;
-    height: 300px;
+    height: 200px;
     z-index: 10;
   }
   .menu__main .menu__title {
@@ -1526,7 +1603,7 @@ i {
     display: inline-block;
     position: absolute;
     bottom: 53.2%;
-    right: 13.5%;
+    right: 6.9%;
     font-size: 20px;
   }
   .menu__main .solid {
@@ -1578,17 +1655,22 @@ i {
   .menu__main .menu__card {
     margin-left: 18px;
     border-radius: 10px;
-    width: 75%;
+    width: 90%;
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
     -webkit-box-shadow: 2px 2px 2px gray;
             box-shadow: 2px 2px 2px gray;
+    outline: 3px solid red;
+  }
+  .menu__main .menu__card-price {
+    display: inline-block;
+    font-weight: bold;
   }
   .menu__main .menu__choices-title {
     margin: 30px 0 20px 18px;
     font-weight: 400;
-    width: 80%;
+    width: 85%;
     padding-bottom: 3px;
     border-bottom: solid 3px;
     -o-border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
@@ -1605,7 +1687,6 @@ i {
     padding: 10px 5px 5px 5px;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
   }
   .menu__main .menu__card-info {
     display: -webkit-box;
@@ -1618,15 +1699,12 @@ i {
     font-weight: 300;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
   }
-  .menu__main .menu__card-price {
-    position: absolute;
-    left: 83%;
-    font-weight: bold;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+  .menu__main .menu__card-icon {
+    color: #99E2D0;
+    font-size: 2rem;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
   .menu__main .menu__order-btn {
     display: -webkit-box;

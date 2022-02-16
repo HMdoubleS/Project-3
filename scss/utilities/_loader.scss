@@ -8,7 +8,7 @@
     color: black;
     position: fixed;
     z-index: 20;
-    animation: loading-disparition .5s 3s ease-in forwards;
+    animation: disappear .5s 3s ease-in forwards;
     
     .loader i {
         width: 70vw;
@@ -30,22 +30,22 @@
           
     .fa-utensils {
         font-size: 5rem;
-        animation: foodmvt 2s 300ms ease-in;
+        animation: foodmvt 2s 200ms ease-in;
         color: #99E2D0;
     }
     
     .fa-carrot {
         font-size: 5rem;
-        animation: foodmvt 2s 330ms ease-in;
+        animation: foodmvt 2s 250ms ease-in;
         color: #FF79DA;
     }
     .fa-glass-cheers {
         font-size: 5rem;
-        animation: foodmvt 2s 500ms ease-in;
+        animation: foodmvt 2s 300ms ease-in;
         color: #9356DC;  
     }
 
-    
+
     @keyframes foodmvt {
            
         5% {
@@ -76,15 +76,32 @@
         }
            
     }
+
+    @keyframes disappear {
+        0% {
+          opacity: 1;
+          z-index: 20;
+        }
+        
+        95% {
+          opacity: 0.9;
+          z-index: -1;
+        }
+        
+        100% {
+          z-index: -20;
+          opacity: 0;
+        }
+      }
                  
-    @keyframes loading-disparition {
-        from {
-            opacity:1;
-        }
+    // @keyframes loading-disparition {
+    //     from {
+    //         opacity:1;
+    //     }
              
-        to {
-            opacity: 0;
-        }
-    }
+    //     to {
+    //         opacity: 0;
+    //     }
+    // }
 
 }

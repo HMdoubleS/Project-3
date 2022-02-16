@@ -4,9 +4,6 @@
         // padding: 0;
         // margin: 0;
     }
-    // .loader {
-    //     @include loader;
-    // }
 
     
 .header__menu {
@@ -29,7 +26,6 @@
         margin: 15px 0;
     }
 }
-
 .menu__containers {
     background-color: #EAEAEA;
 }
@@ -94,13 +90,15 @@
 
 /*-- CARDS--*/
 .menu__card {
+    display: flex;
+    // justify-content: space-between;
     margin-left: 18px;
     border-radius: 10px;
     width: 90%;
     background-color: #fff;
     overflow: hidden;
     margin-bottom: 12px;
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 5px 5px 2px gray;
 }
 
 .menu__choices-title {
@@ -111,37 +109,103 @@
     border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
 }
 
-.menu__card-item {
+.menu__text {
+    width: 100%;
+    transition: width 500ms ease-out;
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            margin-left: 5px;
+            font-weight: 300;
+            padding: 0 5px 8px 5px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 10px 5px 5px 5px;
+        }
+}
+.menu__holder {
+    width: 20%;
     display: flex;
-    margin-left: 5px;
-    font-size: 11px;
-    font-weight: 500; 
-    padding: 10px 5px 5px 5px;
-    overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    outline: 3px solid blue;
 }
 
-.menu__card-info {
-    display: flex;
-    width: 200px;
-    margin-left: 5px;
-    padding: 0 5px 8px 5px;
-    font-size: 14px;
-    font-weight: 300;
-    overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+.menu__card:hover {
+    .menu__text {
+        width: 50%;
+
+        transition: width 500ms ease-out;
+    }
+
+    .menu__spinner {
+        transform: rotate(720deg);
+        transition: transform 1000ms forwards;
+    }
 }
-.menu__card-price {
-    position: absolute;
-    left: 83%;
+
+.menu__price {
+    display: flex;
     font-weight: bold;
+    justify-content: flex-end;
     align-items: flex-end;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+.menu__card:hover .menu__spinner {
+    animation: spin 1000ms forward;
 }
 
+.menu__spinner {
+    font-size: 1rem;
+    color: $tertiary-clr;
+    transform: rotate(-720deg);
+    transition: transform 1000ms forward;
+}
+// .menu__card-item {
+//     display: flex;
+//     margin-left: 5px;
+//     font-size: 11px;
+//     font-weight: 500; 
+//     padding: 10px 5px 5px 5px;
+//     overflow: hidden;
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+// }
 
-.menu__order-btn {
+// .menu__card-info {
+//     display: flex;
+//     width: 200px;
+//     margin-left: 5px;
+//     padding: 0 5px 8px 5px;
+//     font-size: 14px;
+//     font-weight: 300;
+//     overflow: hidden;
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+// }
+// .menu__card-price {
+//     position: absolute;
+//     left: 83%;
+//     font-weight: bold;
+//     align-items: flex-end;
+// }
+
+// .menu__card-icon {
+//     color: $tertiary-clr;
+//     font-size: 2rem;
+//     transform: rotate(-360deg)
+// }
+
+&__order-btn {
     @include center;
     background-color: #EAEAEA;
 
@@ -155,7 +219,15 @@
         filter: brightness(95%);
     }
 }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(90deg);
+    }
 
+    100% {
+        transform: rotate(720deg);
+    }
 
 }
 }
