@@ -159,6 +159,157 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .loader {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: black;
+    position: fixed;
+    z-index: 20;
+    -webkit-animation: disappear .5s 3s ease-in forwards;
+            animation: disappear .5s 3s ease-in forwards;
+  }
+  .loader .loader i {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .loader .fa-wine-glass {
+    font-size: 5rem;
+    -webkit-animation: foodmvt 2s ease-in;
+            animation: foodmvt 2s ease-in;
+    color: #9356DC;
+  }
+  .loader .fa-hamburger {
+    font-size: 5rem;
+    -webkit-animation: foodmvt 2s 150ms ease-in;
+            animation: foodmvt 2s 150ms ease-in;
+    color: #FF79DA;
+  }
+  .loader .fa-utensils {
+    font-size: 5rem;
+    -webkit-animation: foodmvt 2s 200ms ease-in;
+            animation: foodmvt 2s 200ms ease-in;
+    color: #99E2D0;
+  }
+  .loader .fa-carrot {
+    font-size: 5rem;
+    -webkit-animation: foodmvt 2s 250ms ease-in;
+            animation: foodmvt 2s 250ms ease-in;
+    color: #FF79DA;
+  }
+  .loader .fa-glass-cheers {
+    font-size: 5rem;
+    -webkit-animation: foodmvt 2s 300ms ease-in;
+            animation: foodmvt 2s 300ms ease-in;
+    color: #9356DC;
+  }
+  @-webkit-keyframes foodmvt {
+    5% {
+      -webkit-transform: translateX(-300%);
+              transform: translateX(-300%);
+    }
+    20% {
+      opacity: 1;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    25% {
+      -webkit-transform: translateX(-5%);
+              transform: translateX(-5%);
+      -webkit-transform: scale(0.8, 1.2);
+              transform: scale(0.8, 1.2);
+    }
+    30% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    60% {
+      -webkit-transform: translateY(40%);
+              transform: translateY(40%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes foodmvt {
+    5% {
+      -webkit-transform: translateX(-300%);
+              transform: translateX(-300%);
+    }
+    20% {
+      opacity: 1;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    25% {
+      -webkit-transform: translateX(-5%);
+              transform: translateX(-5%);
+      -webkit-transform: scale(0.8, 1.2);
+              transform: scale(0.8, 1.2);
+    }
+    30% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+    60% {
+      -webkit-transform: translateY(40%);
+              transform: translateY(40%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes disappear {
+    0% {
+      opacity: 1;
+      z-index: 20;
+    }
+    95% {
+      opacity: 0.9;
+      z-index: -1;
+    }
+    100% {
+      z-index: -20;
+      opacity: 0;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+      z-index: 20;
+    }
+    95% {
+      opacity: 0.9;
+      z-index: -1;
+    }
+    100% {
+      z-index: -20;
+      opacity: 0;
+    }
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -406,7 +557,7 @@ i {
             flex-direction: column;
   }
   .restaurant__title {
-    margin-left: 30px;
+    margin-left: 35px;
     font-size: 20px;
     font-weight: 500;
     margin-top: 30px;
@@ -416,7 +567,7 @@ i {
   .restaurant__card {
     position: relative;
     background-color: #fff;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-bottom: 20px;
     border-radius: 15px;
     width: 300px;
@@ -989,6 +1140,7 @@ i {
   /*-- RESTAURANT CARD--*/
   .restaurant {
     background-color: #EAEAEA;
+    width: 100vw;
     /*-- HEART--*/
     /* css for solid heart before the hover */
     /* css for solid heart after the hover */
@@ -1002,6 +1154,7 @@ i {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+    margin-left: 20px;
   }
   .restaurant__title {
     margin-left: 30px;
@@ -1175,7 +1328,7 @@ i {
   .menu__main .menu__title-icon {
     display: inline-block;
     position: absolute;
-    bottom: 53.2%;
+    bottom: 59.9%;
     right: 13.5%;
     font-size: 20px;
   }
@@ -1306,6 +1459,26 @@ i {
     transition: transform 1000ms forward;
     transition: transform 1000ms forward, -webkit-transform 1000ms forward;
   }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
   .menu__main__order-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1335,26 +1508,6 @@ i {
   .menu__main__order-btn .btn-gradient:hover {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
-  }
-  @-webkit-keyframes spin {
-    0% {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-    }
-    100% {
-      -webkit-transform: rotate(720deg);
-              transform: rotate(720deg);
-    }
-  }
-  @keyframes spin {
-    0% {
-      -webkit-transform: rotate(90deg);
-              transform: rotate(90deg);
-    }
-    100% {
-      -webkit-transform: rotate(720deg);
-              transform: rotate(720deg);
-    }
   }
 }
 

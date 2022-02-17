@@ -153,11 +153,13 @@
 
     .restaurant {
         background-color: #EAEAEA;
+        width: 100vw;
         
         &__container {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
+            margin-left: 20px;
         }
 
         &__title {
