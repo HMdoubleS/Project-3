@@ -1317,6 +1317,8 @@ i {
     width: 100%;
     height: 200px;
     z-index: 10;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .menu__main .menu__title {
     display: -webkit-inline-box;
@@ -1389,20 +1391,29 @@ i {
     -webkit-transition: width 500ms ease-out;
     transition: width 500ms ease-out;
   }
-  .menu__main .menu__text p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px;
+  .menu__main .menu__text .menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 5px;
-    font-weight: 300;
-    padding: 0 5px 8px 5px;
-  }
-  .menu__main .menu__text h2 {
-    margin-left: 5px;
-    font-size: 15px;
+    font-size: 16.5px;
     font-weight: 500;
     padding: 10px 5px 5px 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .menu__main .menu__text .menu__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5px;
+    padding: 0 5px 8px 5px;
+    font-size: 16px;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .menu__main .menu__holder {
     width: 20%;
@@ -1459,6 +1470,36 @@ i {
     transition: transform 1000ms forward;
     transition: transform 1000ms forward, -webkit-transform 1000ms forward;
   }
+  .menu__main .menu__order-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #EAEAEA;
+  }
+  .menu__main .menu__order-btn .btn-gradient {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 13px 20px;
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    color: white;
+    border: none;
+    -webkit-box-shadow: 5px 5px 5px gray;
+            box-shadow: 5px 5px 5px gray;
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    padding: 13px 60px;
+  }
+  .menu__main .menu__order-btn .btn-gradient:hover {
+    -webkit-filter: brightness(95%);
+            filter: brightness(95%);
+  }
   @-webkit-keyframes spin {
     0% {
       -webkit-transform: rotate(90deg);
@@ -1478,36 +1519,6 @@ i {
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
     }
-  }
-  .menu__main__order-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #EAEAEA;
-  }
-  .menu__main__order-btn .btn-gradient {
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 13px 20px;
-    margin: 10px 0 40px 0;
-    font-size: 14px;
-    color: white;
-    border: none;
-    -webkit-box-shadow: 5px 5px 5px gray;
-            box-shadow: 5px 5px 5px gray;
-    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    padding: 13px 60px;
-  }
-  .menu__main__order-btn .btn-gradient:hover {
-    -webkit-filter: brightness(95%);
-            filter: brightness(95%);
   }
 }
 
@@ -1530,8 +1541,8 @@ i {
   .header__menu .header__return {
     display: inline-block;
     position: absolute;
-    top: 4%;
-    left: 10%;
+    top: 3%;
+    left: 8%;
   }
   .header__menu i {
     color: black;
@@ -1562,19 +1573,21 @@ i {
     width: 100%;
     height: 200px;
     z-index: 10;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .menu__main .menu__title {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 14px;
-    margin: 15px 0 0 18px;
+    margin: 20px 0 0 35px;
   }
   .menu__main .menu__title-icon {
     display: inline-block;
     position: absolute;
-    bottom: 53.2%;
-    right: 13.5%;
+    bottom: 70.2%;
+    right: 8.5%;
     font-size: 20px;
   }
   .menu__main .solid {
@@ -1608,7 +1621,7 @@ i {
     transition: opacity 3000ms;
   }
   .menu__main .menu__card {
-    margin-left: 18px;
+    margin-left: 35px;
     border-radius: 10px;
     width: 90%;
     background-color: #fff;
@@ -1618,7 +1631,7 @@ i {
             box-shadow: 2px 2px 2px gray;
   }
   .menu__main .menu__choices-title {
-    margin: 30px 0 20px 18px;
+    margin: 30px 0 20px 35px;
     font-weight: 400;
     padding-bottom: 3px;
     border-bottom: solid 3px;
@@ -1626,38 +1639,83 @@ i {
        border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #99e2d0), color-stop(10%, #EAEAEA)) 100% 1;
        border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
   }
-  .menu__main .menu__card-item {
+  .menu__main .menu__text {
+    width: 100%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__text .menu__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 5px;
-    font-size: 11px;
+    font-size: 16.5px;
     font-weight: 500;
     padding: 10px 5px 5px 5px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .menu__main .menu__card-info {
+  .menu__main .menu__text .menu__description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 200px;
     margin-left: 5px;
     padding: 0 5px 8px 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .menu__main .menu__card-price {
+  .menu__main .menu__holder {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    outline: 3px solid blue;
+  }
+  .menu__main .menu__price {
     position: absolute;
     left: 83%;
     font-weight: bold;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-animation: spin 1000ms forward;
+            animation: spin 1000ms forward;
+  }
+  .menu__main .menu__card:hover .menu__text {
+    width: 50%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: -webkit-transform 1000ms forwards;
+    transition: -webkit-transform 1000ms forwards;
+    transition: transform 1000ms forwards;
+    transition: transform 1000ms forwards, -webkit-transform 1000ms forwards;
+  }
+  .menu__main .menu__spinner {
+    font-size: 1rem;
+    color: #99E2D0;
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+    -webkit-transition: -webkit-transform 1000ms forward;
+    transition: -webkit-transform 1000ms forward;
+    transition: transform 1000ms forward;
+    transition: transform 1000ms forward, -webkit-transform 1000ms forward;
   }
   .menu__main .menu__order-btn {
     display: -webkit-box;
@@ -1689,6 +1747,26 @@ i {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
   }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -1712,8 +1790,8 @@ i {
   .header__menu .header__return {
     display: inline-block;
     position: absolute;
-    top: 4%;
-    left: 10%;
+    top: 5%;
+    left: 2%;
   }
   .header__menu i {
     color: black;
@@ -1741,8 +1819,10 @@ i {
     /*-- CARDS--*/
   }
   .menu__main .menu__image {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
-    height: 200px;
+    height: 300px;
     z-index: 10;
   }
   .menu__main .menu__title {
@@ -1756,7 +1836,7 @@ i {
     display: inline-block;
     position: absolute;
     bottom: 53.2%;
-    right: 6.9%;
+    right: 3.3%;
     font-size: 20px;
   }
   .menu__main .solid {
@@ -1816,10 +1896,6 @@ i {
             box-shadow: 2px 2px 2px gray;
     outline: 3px solid red;
   }
-  .menu__main .menu__card-price {
-    display: inline-block;
-    font-weight: bold;
-  }
   .menu__main .menu__choices-title {
     margin: 30px 0 20px 18px;
     font-weight: 400;
@@ -1830,18 +1906,23 @@ i {
        border-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #99e2d0), color-stop(10%, #EAEAEA)) 100% 1;
        border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
   }
-  .menu__main .menu__card-item {
+  .menu__main .menu__text {
+    width: 100%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__text .menu__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 5px;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 500;
     padding: 10px 5px 5px 5px;
     overflow: hidden;
     white-space: nowrap;
   }
-  .menu__main .menu__card-info {
+  .menu__main .menu__text .menu__description {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1853,11 +1934,54 @@ i {
     overflow: hidden;
     white-space: nowrap;
   }
-  .menu__main .menu__card-icon {
+  .menu__main .menu__holder {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    outline: 3px solid blue;
+  }
+  .menu__main .menu__price {
+    position: absolute;
+    left: 83%;
+    font-weight: bold;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-animation: spin 1000ms forward;
+            animation: spin 1000ms forward;
+  }
+  .menu__main .menu__card:hover .menu__text {
+    width: 50%;
+    -webkit-transition: width 500ms ease-out;
+    transition: width 500ms ease-out;
+  }
+  .menu__main .menu__card:hover .menu__spinner {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: -webkit-transform 1000ms forwards;
+    transition: -webkit-transform 1000ms forwards;
+    transition: transform 1000ms forwards;
+    transition: transform 1000ms forwards, -webkit-transform 1000ms forwards;
+  }
+  .menu__main .menu__spinner {
+    font-size: 1rem;
     color: #99E2D0;
-    font-size: 2rem;
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
+    -webkit-transition: -webkit-transform 1000ms forward;
+    transition: -webkit-transform 1000ms forward;
+    transition: transform 1000ms forward;
+    transition: transform 1000ms forward, -webkit-transform 1000ms forward;
   }
   .menu__main .menu__order-btn {
     display: -webkit-box;
@@ -1888,6 +2012,26 @@ i {
   .menu__main .menu__order-btn .btn-gradient:hover {
     -webkit-filter: brightness(95%);
             filter: brightness(95%);
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(720deg);
+              transform: rotate(720deg);
+    }
   }
 }
 

@@ -4,30 +4,30 @@
     }
 
     
-.header__menu {
-    @include center;
+    .header__menu {
+        @include center;
 
 
-    .header__return {
-        display: inline-block;
-        position: absolute;
-        top: 4.7%;
-        left: 10%;
-    }
+        .header__return {
+            display: inline-block;
+            position: absolute;
+            top: 4.7%;
+            left: 10%;
+        }
     
-    i {
-        color: black;
+        i {
+            color: black;
+        }
+
+        .header__title {
+            text-align: center;
+            margin: 15px 0;
+        }
     }
 
-    .header__title {
-        text-align: center;
-        margin: 15px 0;
+    .menu__containers {
+        background-color: #EAEAEA;
     }
-}
-
-.menu__containers {
-    background-color: #EAEAEA;
-}
 
 .menu__main {
     display: flex;
@@ -38,6 +38,7 @@
         width: 100%;
         height: 200px;
         z-index: 10;
+        object-fit: cover;
     }
 
     .menu__title {
@@ -112,22 +113,28 @@
         width: 100%;
         transition: width 500ms ease-out;
 
-            p {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-size: 14px;
-                margin-left: 5px;
-                font-weight: 300;
-                padding: 0 5px 8px 5px;
-            }
+        .menu__item {
+            display: flex;
+            margin-left: 5px;
+            font-size: 16.5px;
+            font-weight: 500; 
+            padding: 10px 5px 5px 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
 
-            h2 {
-                margin-left: 5px;
-                font-size: 15px;
-                font-weight: 500;
-                padding: 10px 5px 5px 5px;
-            }
+        .menu__description {
+            display: flex;
+            // width: 50%;
+            margin-left: 5px;
+            padding: 0 5px 8px 5px;
+            font-size: 16px;
+            font-weight: 300;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
     }
 
     .menu__holder {
@@ -172,19 +179,7 @@
         transition: transform 1000ms forward;
     }
 
-@keyframes spin {
-    0% {
-        transform: rotate(90deg);
-    }
-
-    100% {
-        transform: rotate(720deg);
-    }
-
-
-}
-
-&__order-btn {
+.menu__order-btn {
     @include center;
     background-color: #EAEAEA;
 
@@ -197,6 +192,18 @@
     .btn-gradient:hover {
         filter: brightness(95%);
     }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+
+
 }
 }
 }

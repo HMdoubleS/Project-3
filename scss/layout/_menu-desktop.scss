@@ -14,8 +14,8 @@
         .header__return {
             display: inline-block;
             position: absolute;
-            top: 4%;
-            left: 10%;
+            top: 5%;
+            left: 2%;
         }
         
         i {
@@ -37,10 +37,12 @@
         flex-direction: column;
 
     .menu__image {
+        object-fit: cover;
         width: 100%;
-        height: 200px;
+        height: 300px;
         z-index: 10;
     }
+    
     
     .menu__title {
         display: inline-flex;
@@ -53,7 +55,7 @@
         display: inline-block;
         position: absolute;
         bottom: 53.2%;
-        right: 6.9%;
+        right: 3.3%;
         font-size: 20px;
     }
     /* css for solid heart before the hover */
@@ -112,13 +114,7 @@
         box-shadow: 2px 2px 2px gray;
         outline: 3px solid red;
     }
-    .menu__card-price {
-        display: inline-block;
-        // position: absolute;
-        // padding-left: 50px;
-        // left: 60px;
-        font-weight: bold;
-    }
+    
     .menu__choices-title {
         margin: 30px 0 20px 18px;
         font-weight: 400;
@@ -127,11 +123,13 @@
         border-bottom: solid 3px;
         border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
     }
-    
-    .menu__card-item {
+    .menu__text {
+        width: 100%;
+        transition: width 500ms ease-out;
+    .menu__item {
         display: flex;
         margin-left: 5px;
-        font-size: 11px;
+        font-size: 16px;
         font-weight: 500; 
         padding: 10px 5px 5px 5px;
         overflow: hidden;
@@ -139,7 +137,7 @@
         //     text-overflow: ellipsis;
     }
     
-    .menu__card-info {
+    .menu__description {
         display: flex;
         width: 200px;
         margin-left: 5px;
@@ -150,25 +148,73 @@
             white-space: nowrap;
         //     text-overflow: ellipsis;
     }
-    
-    .menu__card-icon {
-        color: $tertiary-clr;
-        font-size: 2rem;
-        transform: rotate(-360deg)
-    }
-    .menu__order-btn {
-        @include center;
-        background-color: #EAEAEA;
-    
-    
-        .btn-gradient {
-            @include btn-gradient;
-            padding: 13px 60px;
+}
+
+.menu__holder {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    outline: 3px solid blue;
+}
+
+.menu__price {
+    position: absolute;
+    left: 83%;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.menu__card:hover .menu__spinner {
+    animation: spin 1000ms forward;
+}
+
+.menu__card:hover {
+        .menu__text {
+            width: 50%;
+
+            transition: width 500ms ease-out;
         }
-    
-        .btn-gradient:hover {
-            filter: brightness(95%);
+
+        .menu__spinner {
+            transform: rotate(720deg);
+            transition: transform 1000ms forwards;
         }
+}
+.menu__spinner {
+    font-size: 1rem;
+    color: $tertiary-clr;
+    transform: rotate(-720deg);
+    transition: transform 1000ms forward;
+}
+
+.menu__order-btn {
+    @include center;
+    background-color: #EAEAEA;
+
+
+    .btn-gradient {
+        @include btn-gradient;
+        padding: 13px 60px;
     }
+
+    .btn-gradient:hover {
+        filter: brightness(95%);
     }
+}
+
+}
+
+@keyframes spin {
+0% {
+    transform: rotate(90deg);
+}
+
+100% {
+    transform: rotate(720deg);
+}
+
+
+}
 }
