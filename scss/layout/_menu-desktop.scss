@@ -29,12 +29,15 @@
     }
     
     .menu__containers {
+        position: relative;
         background-color: #EAEAEA; 
+        
     }
     
-    .menu__main {
+.menu__main {
         display: flex;
         flex-direction: column;
+        
 
     .menu__image {
         object-fit: cover;
@@ -47,16 +50,17 @@
     .menu__title {
         display: inline-flex;
         font-size: 14px;
-        margin: 15px 0 0 18px;
+        margin: 15px 0 0 40px;
     }
     
     /*-- HEART--*/
     .menu__title-icon {
         display: inline-block;
         position: absolute;
-        bottom: 53.2%;
-        right: 3.3%;
+        top: 6.5%;
+        left: 93.2%;
         font-size: 20px;
+        z-index: 10;
     }
     /* css for solid heart before the hover */
     .solid {
@@ -104,90 +108,90 @@
     width: 100%;
     }
 
-    .menu__card {
-        margin-left: 18px;
-        border-radius: 10px;
-        width: 90%;
-        background-color: #fff;
-        overflow: hidden;
-        margin-bottom: 12px;
-        box-shadow: 2px 2px 2px gray;
-        outline: 3px solid red;
-    }
-    
     .menu__choices-title {
-        margin: 30px 0 20px 18px;
+        margin: 30px 0 20px 40px;
         font-weight: 400;
         width: 85%;
         padding-bottom: 3px;
         border-bottom: solid 3px;
         border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
     }
-    .menu__text {
-        width: 100%;
-        transition: width 500ms ease-out;
-    .menu__item {
+
+    .menu__card {
         display: flex;
-        margin-left: 5px;
-        font-size: 16px;
-        font-weight: 500; 
-        padding: 10px 5px 5px 5px;
+        margin-left: 40px;
+        border-radius: 10px;
+        width: 75%;
+        background-color: #fff;
         overflow: hidden;
-            white-space: nowrap;
-        //     text-overflow: ellipsis;
-    }
-    
-    .menu__description {
-        display: flex;
-        width: 200px;
-        margin-left: 5px;
-        padding: 0 5px 8px 5px;
-        font-size: 14px;
-        font-weight: 300;
-        overflow: hidden;
-            white-space: nowrap;
-        //     text-overflow: ellipsis;
-    }
-}
+        margin-bottom: 12px;
+        box-shadow: 2px 2px 2px gray;
+        // outline: 3px solid red;
 
-.menu__holder {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    outline: 3px solid blue;
-}
-
-.menu__price {
-    position: absolute;
-    left: 83%;
-    font-weight: bold;
-    align-items: flex-end;
-}
-
-.menu__card:hover .menu__spinner {
-    animation: spin 1000ms forward;
-}
-
-.menu__card:hover {
         .menu__text {
+            width: 75%;
+            // outline: 3px dotted red;
+        }
+    
+        .menu__item {
+            display: flex;
+            margin-left: 5px;
+            font-size: 16px;
+            font-weight: 500; 
+            padding: 10px 5px 5px 5px;
+        }
+    
+        .menu__description {
+            display: flex;
+            // width: 200px;
+            margin-left: 5px;
+            padding: 0 5px 8px 5px;
+            font-size: 14px;
+            font-weight: 300;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .menu__price {
+            width: 25%;
+            font-weight: bold;
+            align-items: flex-end;
+            flex: none;
+            margin-left: 15px;
+        }
+
+        .menu__holder {
+            width: 25%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $tertiary-clr;
+            flex: none;
+            // outline: 3px solid blue;
+        }
+
+        .menu__icon {
+            color: #fff;
+        }
+    
+    }
+
+        .menu__card:hover .menu__text {
             width: 50%;
-
-            transition: width 500ms ease-out;
         }
 
-        .menu__spinner {
-            transform: rotate(720deg);
-            transition: transform 1000ms forwards;
+        .menu__holder .menu__icon {
+            animation: clockwise 1000ms ease-in-out forwards;
         }
+  
+        .menu__card:hover .menu__icon {
+            animation: counter-clock 1000ms ease-in-out forwards;
+        }
+      
 }
-.menu__spinner {
-    font-size: 1rem;
-    color: $tertiary-clr;
-    transform: rotate(-720deg);
-    transition: transform 1000ms forward;
-}
+
+
 
 .menu__order-btn {
     @include center;
@@ -203,18 +207,25 @@
         filter: brightness(95%);
     }
 }
-
-}
-
-@keyframes spin {
-0% {
-    transform: rotate(90deg);
-}
-
-100% {
-    transform: rotate(720deg);
 }
 
 
-}
-}
+@keyframes clockwise {
+    0% {
+      transform:  rotate(0.0turn);
+    }
+    
+    100% {
+      transform:  rotate(2.0turn);
+    }
+  }
+  
+  @keyframes counter-clock {
+    0% {
+      transform:  rotate(0.0turn);
+    }
+    
+    100% {
+      transform:  rotate(-2.0turn);
+    }
+  }

@@ -26,13 +26,14 @@
     }
 
     .menu__containers {
+        position: relative;
         background-color: #EAEAEA;
     }
 
 .menu__main {
     display: flex;
     flex-direction: column;
-
+}
 
     .menu__image {
         width: 100%;
@@ -51,8 +52,8 @@
     .menu__title-icon {
         display: inline-block;
         position: absolute;
-        bottom: 59.9%;
-        right: 13.5%;
+        top: 2%;
+        left: 89%;
         font-size: 20px;
     }
 /* css for solid heart before the hover */
@@ -89,17 +90,6 @@
 
 
 /*-- CARDS--*/
-    .menu__card {
-        display: flex;
-        // justify-content: space-between;
-        margin-left: 18px;
-        border-radius: 10px;
-        width: 90%;
-        background-color: #fff;
-        overflow: hidden;
-        margin-bottom: 12px;
-        box-shadow: 5px 5px 2px gray;
-    }
 
     .menu__choices-title {
         margin: 30px 0 20px 18px;
@@ -109,9 +99,38 @@
         border-image: linear-gradient(to right, #99e2d0 10%, #EAEAEA 10%) 100% 1;
     }
 
-    .menu__text {
-        width: 100%;
-        transition: width 500ms ease-out;
+    .menu__card {
+        display: flex;
+        margin-left: 18px;
+        border-radius: 10px;
+        width: 90%;
+        background-color: #fff;
+        overflow: hidden;
+        margin-bottom: 12px;
+        box-shadow: 5px 5px 2px gray;
+    }
+        
+        .menu__price {
+            display: flex;
+            // width: 20%;
+            font-weight: bold;
+            // justify-content: flex-end;
+            align-items: flex-end;
+            // padding-left: 58px;
+            padding: 0 8px 8px 48px;
+            // outline: 3px solid red;
+        }
+
+        .menu__text {
+            width: 75%;
+            flex: none;
+        }
+
+        .menu__card p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
 
         .menu__item {
             display: flex;
@@ -126,7 +145,6 @@
 
         .menu__description {
             display: flex;
-            // width: 50%;
             margin-left: 5px;
             padding: 0 5px 8px 5px;
             font-size: 16px;
@@ -135,75 +153,72 @@
             white-space: nowrap;
             text-overflow: ellipsis;
         }
-    }
 
-    .menu__holder {
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fff;
-        outline: 3px solid blue;
-    }
-
-    .menu__card:hover {
-        .menu__text {
-            width: 50%;
-
-            transition: width 500ms ease-out;
+        .menu__holder {
+            width: 25%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $tertiary-clr;
+            // outline: 3px solid blue;
         }
 
-        .menu__spinner {
-            transform: rotate(720deg);
-            transition: transform 1000ms forwards;
+        .menu__card:hover {
+            .menu__text {
+                width: 50%;
+            }
+        }    
+
+        .menu__card:hover {
+            .menu__icon {
+                animation: counter-clock 1000ms ease-in-out forwards;
+            }
         }
-    }
 
-    .menu__price {
-        display: flex;
-        font-weight: bold;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-left: 60px;
-        padding-top: 30px;
-    }
+        .menu__holder {
+            .menu__icon {
+                animation: clockwise 1000ms ease-in-out forwards;
+            }
+        }
+        .menu__icon {
+            color: #fff;
+        }
 
-    .menu__card:hover .menu__spinner {
-        animation: spin 1000ms forward;
-    }
-
-    .menu__spinner {
-        font-size: 1rem;
-        color: $tertiary-clr;
-        transform: rotate(-720deg);
-        transition: transform 1000ms forward;
-    }
-
-.menu__order-btn {
-    @include center;
-    background-color: #EAEAEA;
+        .menu__order-btn {
+            @include center;
+            background-color: #EAEAEA;
 
 
-    .btn-gradient {
-        @include btn-gradient;
-        padding: 13px 60px;
-    }
+            .btn-gradient {
+                @include btn-gradient;
+                padding: 13px 60px;
+            }
 
-    .btn-gradient:hover {
-        filter: brightness(95%);
-    }
-}
+            .btn-gradient:hover {
+                filter: brightness(95%);
+            }
+        }
+     
+    
 
-@keyframes spin {
+
+@keyframes clockwise {
     0% {
-        transform: rotate(90deg);
+      transform:  rotate(0.0turn);
     }
-
+    
     100% {
-        transform: rotate(720deg);
+      transform:  rotate(2.0turn);
     }
-
-
 }
+  
+@keyframes counter-clock {
+    0% {
+      transform:  rotate(0.0turn);
+    }
+    
+    100% {
+      transform:  rotate(-2.0turn);
+    }
 }
 }
