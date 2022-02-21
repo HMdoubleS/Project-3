@@ -1,13 +1,14 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./utilities/loader";
+@import "./utilities/animations";
 @import "./layout/footer";
-@import "./layout/mobile/homepage;
-@import "./layout/desktop/homepage-desktop;
-@import "./layout/tablet/homepage-tablet;
-@import "./layout/mobile/menu;
-@import "./layout/tablet/menu-tablet;
-@import "./layout/desktop/menu-desktop;
+@import "./layout/mobile/homepage";
+@import "./layout/desktop/homepage-desktop";
+@import "./layout/tablet/homepage-tablet";
+@import "./layout/mobile/menu";
+@import "./layout/tablet/menu-tablet";
+@import "./layout/desktop/menu-desktop";
 @import "./utilities/typography"
 
 

@@ -31,7 +31,6 @@
     .menu__containers {
         position: relative;
         background-color: #EAEAEA; 
-        
     }
     
 .menu__main {
@@ -50,7 +49,7 @@
     .menu__title {
         display: inline-flex;
         font-size: 14px;
-        margin: 15px 0 0 40px;
+        margin: 15px 0 0 35px;
     }
     
     /*-- HEART--*/
@@ -58,7 +57,7 @@
         display: inline-block;
         position: absolute;
         top: 6.5%;
-        left: 93.2%;
+        left: 96.2%;
         font-size: 20px;
         z-index: 10;
     }
@@ -105,11 +104,11 @@
     .menu__entrees,
     .menu__main-dish,
     .menu__dessert {
-    width: 100%;
+        width: 100%;
     }
 
     .menu__choices-title {
-        margin: 30px 0 20px 40px;
+        margin: 30px 0 20px 35px;
         font-weight: 400;
         width: 85%;
         padding-bottom: 3px;
@@ -119,31 +118,43 @@
 
     .menu__card {
         display: flex;
-        margin-left: 40px;
+        margin-left: 35px;
         border-radius: 10px;
-        width: 75%;
+        width: 85%;
         background-color: #fff;
         overflow: hidden;
         margin-bottom: 12px;
-        box-shadow: 2px 2px 2px gray;
-        // outline: 3px solid red;
+        box-shadow: 5px 5px 2px gray;
+        animation: appear ease-in-out 0.8s;
+    }
+        
+        .menu__price {
+            display: flex;
+            font-weight: bold;
+            align-items: flex-end;
+            padding: 5px 8px 8px 54.6px;
+        }
 
         .menu__text {
+            display:inline-block;
             width: 75%;
-            // outline: 3px dotted red;
+            flex: none;
         }
-    
+
         .menu__item {
-            display: flex;
+            display: inline-block;
             margin-left: 5px;
             font-size: 16px;
             font-weight: 500; 
             padding: 10px 5px 5px 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
-    
+
         .menu__description {
-            display: flex;
-            // width: 200px;
+            display: inline-block;
+            width: 100%;
             margin-left: 5px;
             padding: 0 5px 8px 5px;
             font-size: 14px;
@@ -153,79 +164,90 @@
             text-overflow: ellipsis;
         }
 
-        .menu__price {
-            width: 25%;
-            font-weight: bold;
-            align-items: flex-end;
-            flex: none;
-            margin-left: 15px;
-        }
-
         .menu__holder {
             width: 25%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             background-color: $tertiary-clr;
-            flex: none;
-            // outline: 3px solid blue;
         }
 
+        .menu__card:hover {
+            .menu__text {
+                width: 50%;
+            }
+        }    
+
+        .menu__card:hover {
+            .menu__icon {
+                animation: counter-clock 1000ms ease-in-out forwards;
+            }
+        }
+
+        .menu__holder {
+            .menu__icon {
+                animation: clockwise 1000ms ease-in-out forwards;
+            }
+        }
         .menu__icon {
             color: #fff;
         }
-    
-    }
 
-        .menu__card:hover .menu__text {
-            width: 50%;
+/* css for card ease in */       
+        #card-1 {
+            animation-delay: 0.1s;
+        }
+          
+        #card-2 {
+            animation-delay: 0.2s;
+        }
+          
+        #card-3 {
+            animation-delay: 0.3s;
+        }
+          
+        #card-4 {
+            animation-delay: 0.4s;
+        }
+          
+        #card-5 {
+            animation-delay: 0.5s;
+        }
+          
+        #card-6 {
+            animation-delay: 0.6s;
+        }
+          
+        #card-7 {
+            animation-delay: 0.7s;
+        }
+          
+        #card-8 {
+            animation-delay: 0.8s;
+        }
+          
+        #card-9 { 
+            animation-delay: 0.9s;     
         }
 
-        .menu__holder .menu__icon {
-            animation: clockwise 1000ms ease-in-out forwards;
+        #card-10 { 
+            animation-delay: 1s;     
         }
-  
-        .menu__card:hover .menu__icon {
-            animation: counter-clock 1000ms ease-in-out forwards;
+/* order button */   
+        .menu__order-btn {
+            @include center;
+            background-color: #EAEAEA;
+
+
+            .btn-gradient {
+                @include btn-gradient;
+                padding: 13px 60px;
+            }
+
+            .btn-gradient:hover {
+                filter: brightness(95%);
+            }
         }
-      
-}
-
-
-
-.menu__order-btn {
-    @include center;
-    background-color: #EAEAEA;
-
-
-    .btn-gradient {
-        @include btn-gradient;
-        padding: 13px 60px;
-    }
-
-    .btn-gradient:hover {
-        filter: brightness(95%);
-    }
 }
 }
 
-
-@keyframes clockwise {
-    0% {
-      transform:  rotate(0.0turn);
-    }
-    
-    100% {
-      transform:  rotate(2.0turn);
-    }
-  }
-  
-  @keyframes counter-clock {
-    0% {
-      transform:  rotate(0.0turn);
-    }
-    
-    100% {
-      transform:  rotate(-2.0turn);
-    }
-  }
