@@ -180,7 +180,7 @@
             animation: disappear .5s 3s ease-in forwards;
   }
   .loader .loader i {
-    width: 70vw;
+    width: 35vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -189,31 +189,31 @@
             justify-content: space-between;
   }
   .loader .fa-wine-glass {
-    font-size: 5rem;
+    font-size: 3.5rem;
     -webkit-animation: foodmvt 2s ease-in;
             animation: foodmvt 2s ease-in;
     color: #9356DC;
   }
   .loader .fa-hamburger {
-    font-size: 5rem;
+    font-size: 3.5rem;
     -webkit-animation: foodmvt 2s 150ms ease-in;
             animation: foodmvt 2s 150ms ease-in;
     color: #FF79DA;
   }
   .loader .fa-utensils {
-    font-size: 5rem;
+    font-size: 3.5rem;
     -webkit-animation: foodmvt 2s 200ms ease-in;
             animation: foodmvt 2s 200ms ease-in;
     color: #99E2D0;
   }
   .loader .fa-carrot {
-    font-size: 5rem;
+    font-size: 3.5rem;
     -webkit-animation: foodmvt 2s 250ms ease-in;
             animation: foodmvt 2s 250ms ease-in;
     color: #FF79DA;
   }
   .loader .fa-glass-cheers {
-    font-size: 5rem;
+    font-size: 3.5rem;
     -webkit-animation: foodmvt 2s 300ms ease-in;
             animation: foodmvt 2s 300ms ease-in;
     color: #9356DC;
@@ -520,6 +520,7 @@ i {
     width: 80%;
     font-weight: 300;
     padding-bottom: 20px;
+    margin-left: 30px;
   }
   .booking .btn-gradient {
     cursor: pointer;

@@ -109,36 +109,36 @@
         animation: disappear .5s 3s ease-in forwards;
         
         .loader i {
-            width: 70vw;
+            width: 35vw;
             display: flex;
             justify-content: space-between;
         }
     
         .fa-wine-glass {
-            font-size: 5rem;
+            font-size: 3.5rem;
             animation: foodmvt 2s ease-in;
             color: #9356DC;  
         }
         
         .fa-hamburger{
-            font-size: 5rem;
+            font-size: 3.5rem;
             animation: foodmvt 2s 150ms ease-in;
             color: #FF79DA;
         }
               
         .fa-utensils {
-            font-size: 5rem;
+            font-size: 3.5rem;
             animation: foodmvt 2s 200ms ease-in;
             color: #99E2D0;
         }
         
         .fa-carrot {
-            font-size: 5rem;
+            font-size: 3.5rem;
             animation: foodmvt 2s 250ms ease-in;
             color: #FF79DA;
         }
         .fa-glass-cheers {
-            font-size: 5rem;
+            font-size: 3.5rem;
             animation: foodmvt 2s 300ms ease-in;
             color: #9356DC;  
         }
