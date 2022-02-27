@@ -62,7 +62,7 @@
     position: absolute;
     opacity: 0;
     background: linear-gradient(to top, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 3000ms;
 }
@@ -71,7 +71,7 @@
 .menu__title-icon:hover .solid {
     opacity: 100%;
     background: linear-gradient(to top, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 3000ms; 
 }
@@ -123,6 +123,7 @@
         display:inline-block;
         width: 75%;
         flex: none;
+        transition: width 1s;
     }
 
     .menu__item {
@@ -159,6 +160,7 @@
     .menu__card:hover {
         .menu__text {
             width: 50%;
+            transition: width 1s;
         }
     }    
 

@@ -3,12 +3,12 @@
 @import "./utilities/loader";
 @import "./utilities/animations";
 @import "./layout/footer";
-@import "./layout/mobile/homepage";
-@import "./layout/desktop/homepage-desktop";
-@import "./layout/tablet/homepage-tablet";
-@import "./layout/mobile/menu";
-@import "./layout/tablet/menu-tablet";
-@import "./layout/desktop/menu-desktop";
+@import "./layout/menu/menu";
+@import "./layout/menu/menu-tablet";
+@import "./layout/menu/menu-desktop";
+@import "./layout/homepage/homepage";
+@import "./layout/homepage/homepage-tablet";
+@import "./layout/homepage/homepage-desktop";
 @import "./utilities/typography"
 
 
