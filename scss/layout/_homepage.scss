@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) {
     * {
         box-sizing: border-box;
         padding: 0;
@@ -7,13 +7,12 @@
     
     .header__title {
         @include center;
-    
+
         .header__logo {
-            height: 55px;
-            width: 50%;
             padding: 15px;
             margin: 0;
         }
+
     }
 
     /*-- LOCATION--*/
@@ -23,6 +22,7 @@
         font-weight: 700;
         font-size: 16px;
         background-color: lightgray;
+        width: 100vw;
         padding: 3px;
         box-shadow: inset 1px 5px 14px -14px gray;
         
@@ -57,7 +57,6 @@
     
         &__wrapper {
         display: flex;
-        flex-direction: column;
         align-items: center;
         background-color: #EAEAEA;
         }
@@ -70,7 +69,6 @@
             width: 80%;
             font-weight: 300;
             padding-bottom: 20px;
-            margin-left: 30px;
         }
 
         .btn-gradient {
@@ -91,7 +89,7 @@
     
         &__wrap {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 100%;
@@ -117,16 +115,16 @@
             text-align: center;
             border-radius: 100px;
             background-color: $primary-clr;
-            margin-left: 55px;
+            // margin-left: 55px;
             position: absolute;
-            left: -63px;
+            // left: -63px;
         }
 
         &__button {
             background-color: #EAEAEA;
             position: relative;
             border: none;
-            width: 80%;
+            // width: 80%;
             padding: 20px;
             border-radius: 25px;
             margin: 0 0 15px 25px;
@@ -153,13 +151,7 @@
     .restaurant {
         background-color: #EAEAEA;
     
-        &__wrap {
-            display: flex;
-            flex-direction: column;
-        }
-
         &__title {
-            margin-left: 35px;
             font-size: 20px;
             font-weight: 500;
             margin-top: 30px;
@@ -170,10 +162,8 @@
         &__card {
             position: relative;
             background-color: #fff;
-            margin-left: 35px;
             margin-bottom: 20px;
             border-radius: 15px;
-            width: 300px;
             height: auto;
             box-shadow: 2px 5px 5px lightgray;
         }
@@ -182,6 +172,7 @@
             margin-left: 10px;
             padding: 10px 0 15px 0;
         }
+
         h2 {
             font-weight: 500;
             font-size: 16px;
@@ -200,28 +191,10 @@
             align-items: center;
             z-index: 8;
             width: 100%;
-            height: 150px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             object-fit: cover;
         }
-
-        &__card-img-1 {
-            object-position: left bottom;
-        }
-
-        &__card-img-2 {
-            object-position: 0px -137px;
-        }
-
-        &__card-img-3 {
-            object-position: 0px -50px;
-        }
-
-        &__card-img-4 {
-            object-position: 0px -50px;
-        }
-
 
         &__card-label {
             background-color: $tertiary-clr;
@@ -241,15 +214,16 @@
         &__card-icon {
             display: inline-block;
             position: absolute;
-            top: 76.8%;
-            right: 13.5%;
+            // top: 76.8%;
             font-size: 20px;
         }
+
         /* css for solid heart before the hover */
         .solid {
             position: absolute;
             opacity: 0;
             background: linear-gradient(to top, #FF79DA, #9356DC);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: opacity 3000ms;
@@ -259,6 +233,7 @@
         .restaurant__card-icon:hover .solid {
             opacity: 100%;
             background: linear-gradient(to top, #FF79DA, #9356DC);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: opacity 3000ms; 

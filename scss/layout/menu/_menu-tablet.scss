@@ -63,6 +63,7 @@
     opacity: 0;
     background: linear-gradient(to top, #FF79DA, #9356DC);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 3000ms;
 }
@@ -72,6 +73,7 @@
     opacity: 100%;
     background: linear-gradient(to top, #FF79DA, #9356DC);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: opacity 3000ms; 
 }

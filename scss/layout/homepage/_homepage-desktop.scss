@@ -1,286 +1,286 @@
-@media screen and (min-width: 993px) {
+// @media screen and (min-width: 993px) {
 
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
+//     * {
+//         box-sizing: border-box;
+//         padding: 0;
+//         margin: 0;
+//     }
     
-    .header__title {
-        @include center;
+//     .header__title {
+//         @include center;
     
-        .header__logo {
-            height: 100px;
-            width: 28%;
-            padding: 15px;
-            margin: 0;
-        }
-    }
+//         .header__logo {
+//             height: 100px;
+//             width: 28%;
+//             padding: 15px;
+//             margin: 0;
+//         }
+//     }
 
-    /*-- LOCATION--*/
+//     /*-- LOCATION--*/
 
-    .location {
-        @include center;
-        font-weight: 700;
-        font-size: 16px;
-        background-color: lightgray;
-        padding: 3px;
-        box-shadow: inset 1px 5px 14px -14px gray;
+//     .location {
+//         @include center;
+//         font-weight: 700;
+//         font-size: 16px;
+//         background-color: lightgray;
+//         padding: 3px;
+//         box-shadow: inset 1px 5px 14px -14px gray;
         
-        &__wrapper {
-            padding: 10px;
-            margin-left: 38px;
-        }
+//         &__wrapper {
+//             padding: 10px;
+//             margin-left: 38px;
+//         }
 
-        i {
-            padding-right: 20px;
-        }
+//         i {
+//             padding-right: 20px;
+//         }
 
-        &__search {
-            align-items: center;
-            width: 60%;
-            border: none;
-            font-weight: 900;
-            background-color: lightgray;
-        }
+//         &__search {
+//             align-items: center;
+//             width: 60%;
+//             border: none;
+//             font-weight: 900;
+//             background-color: lightgray;
+//         }
 
-        &__search:focus {
-            border: none;
-            outline: none;
+//         &__search:focus {
+//             border: none;
+//             outline: none;
 
-        }
-    }
+//         }
+//     }
 
-    /*-- BOOKING--*/
+//     /*-- BOOKING--*/
 
-    .booking {
-        text-align: center;
+//     .booking {
+//         text-align: center;
     
-        &__wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: #EAEAEA;
-            }
+//         &__wrapper {
+//             display: flex;
+//             flex-direction: row;
+//             flex-wrap: wrap;
+//             justify-content: space-evenly;
+//             align-items: center;
+//             background-color: #EAEAEA;
+//             }
     
-        &__title {
-            padding: 20px 0;
-        }
+//         &__title {
+//             padding: 20px 0;
+//         }
 
-        &__info {
-            width: 80%;
-            font-weight: 300;
-            margin-left: 40px;
-            padding-bottom: 20px;
-        }
+//         &__info {
+//             width: 80%;
+//             font-weight: 300;
+//             margin-left: 40px;
+//             padding-bottom: 20px;
+//         }
 
-        .btn-gradient {
-            @include btn-gradient;
-            margin: 30px 80px 25px 0;
-        }
+//         .btn-gradient {
+//             @include btn-gradient;
+//             margin: 30px 80px 25px 0;
+//         }
 
-        .btn-gradient:hover {
-                filter: brightness(90%);
-        }
-    }
+//         .btn-gradient:hover {
+//                 filter: brightness(90%);
+//         }
+//     }
 
-    /*-- EXPLANATION--*/
+//     /*-- EXPLANATION--*/
 
-    .explanation {
+//     .explanation {
     
-        &__wrap {
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin-left: 30px;
-        }
+//         &__wrap {
+//             flex-direction: row;
+//             align-items: center;
+//             justify-content: center;
+//             width: 100%;
+//             margin-left: 30px;
+//         }
 
-        &__title {
-            margin-left: 30px;
-            padding: 35px 0 15px 0;
-            font-weight: 500;
-            font-size: 20px;
-        }
+//         &__title {
+//             margin-left: 30px;
+//             padding: 35px 0 15px 0;
+//             font-weight: 500;
+//             font-size: 20px;
+//         }
 
-        span {
-            display: inline-block;
-        }
+//         span {
+//             display: inline-block;
+//         }
 
-        &__num { 
-            color: white;
-            padding-top: 3px;
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            border-radius: 100px;
-            background-color: $primary-clr;
-            margin-left: 55px;
-            position:absolute;
-            left: -63px;
-        }
+//         &__num { 
+//             color: white;
+//             padding-top: 3px;
+//             width: 20px;
+//             height: 20px;
+//             text-align: center;
+//             border-radius: 100px;
+//             background-color: $primary-clr;
+//             margin-left: 55px;
+//             position:absolute;
+//             left: -63px;
+//         }
 
-        &__button {
-            background-color: #EAEAEA;
-            position: relative;
-            border: none;
-            width: 29%;
-            padding: 20px;
-            border-radius: 25px;
-            margin-left: 25px;
-            text-align: left;
-            box-shadow: 2px 2px 2px gray;
-        }
+//         &__button {
+//             background-color: #EAEAEA;
+//             position: relative;
+//             border: none;
+//             width: 29%;
+//             padding: 20px;
+//             border-radius: 25px;
+//             margin-left: 25px;
+//             text-align: left;
+//             box-shadow: 2px 2px 2px gray;
+//         }
 
-        &__button:hover {
-            background-color: #E6D1F2;
-            .explanation__icon {
-                color: $primary-clr;
-            }
-        }
+//         &__button:hover {
+//             background-color: #E6D1F2;
+//             .explanation__icon {
+//                 color: $primary-clr;
+//             }
+//         }
 
-        &__icon {
-            font-size: 18px;
-            padding: 0 10px;
-            width: 30px;
-        }
+//         &__icon {
+//             font-size: 18px;
+//             padding: 0 10px;
+//             width: 30px;
+//         }
 
-    }
+//     }
 
-    /*-- RESTAURANT CARD--*/
+//     /*-- RESTAURANT CARD--*/
 
-    .restaurant {
-        background-color: #EAEAEA;
-        width: 100vw;
+//     .restaurant {
+//         background-color: #EAEAEA;
+//         width: 100vw;
         
-        &__container {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            margin-left: 20px;
-        }
+//         &__container {
+//             display: flex;
+//             flex-wrap: wrap;
+//             width: 100%;
+//             margin-left: 20px;
+//         }
 
-        &__title {
-            margin-left: 30px;
-            font-size: 20px;
-            font-weight: 500;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            padding-top: 30px;
-        }
+//         &__title {
+//             margin-left: 30px;
+//             font-size: 20px;
+//             font-weight: 500;
+//             margin-top: 30px;
+//             margin-bottom: 20px;
+//             padding-top: 30px;
+//         }
 
-        &__card {
-            position: relative;
-            background-color: #fff;
-            margin-left: 30px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            width: 45%;
-            height: auto;
-            box-shadow: 2px 5px 5px lightgray;
-        }
+//         &__card {
+//             position: relative;
+//             background-color: #fff;
+//             margin-left: 30px;
+//             margin-bottom: 20px;
+//             border-radius: 15px;
+//             width: 45%;
+//             height: auto;
+//             box-shadow: 2px 5px 5px lightgray;
+//         }
         
-        &__card-info {
-            margin-left: 10px;
-            padding: 10px 0 15px 0;
-        }
-        h2 {
-            font-weight: 500;
-            font-size: 16px;
-        }
+//         &__card-info {
+//             margin-left: 10px;
+//             padding: 10px 0 15px 0;
+//         }
+//         h2 {
+//             font-weight: 500;
+//             font-size: 16px;
+//         }
 
-        h4 {
-            margin-top: 5px;
-            font-weight: 200;
-            font-size: 14px;
-        }
+//         h4 {
+//             margin-top: 5px;
+//             font-weight: 200;
+//             font-size: 14px;
+//         }
 
-        &__card-img-1,
-        &__card-img-2,
-        &__card-img-3,
-        &__card-img-4 {
-            align-items: center;
-            z-index: 8;
-            width: 100%;
-            height: 150px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            object-fit: cover;
-        }
+//         &__card-img-1,
+//         &__card-img-2,
+//         &__card-img-3,
+//         &__card-img-4 {
+//             align-items: center;
+//             z-index: 8;
+//             width: 100%;
+//             height: 150px;
+//             border-top-left-radius: 15px;
+//             border-top-right-radius: 15px;
+//             object-fit: cover;
+//         }
 
-        &__card-img-1 {
-            object-position: 0px -130px;
-        }
+//         &__card-img-1 {
+//             object-position: 0px -130px;
+//         }
 
-        &__card-img-2 {
-            object-position: 0px -295px;
-        }
+//         &__card-img-2 {
+//             object-position: 0px -295px;
+//         }
 
-        &__card-img-3 {
-            object-position: 0px -175px;
-        }
+//         &__card-img-3 {
+//             object-position: 0px -175px;
+//         }
 
-        &__card-img-4 {
-            object-position: 0px -175px;
-        }
+//         &__card-img-4 {
+//             object-position: 0px -175px;
+//         }
 
 
-        &__card-label {
-            background-color: $tertiary-clr;
-            margin: 0;
-            width: 75px;
-            padding: 5px 0;
-            text-align: center;
-            font-size: 12px;
+//         &__card-label {
+//             background-color: $tertiary-clr;
+//             margin: 0;
+//             width: 75px;
+//             padding: 5px 0;
+//             text-align: center;
+//             font-size: 12px;
 
-            position: absolute;
-            top: 10px;
-            right: 8px;
-        }
+//             position: absolute;
+//             top: 10px;
+//             right: 8px;
+//         }
 
-        /*-- HEART--*/
+//         /*-- HEART--*/
 
-        &__card-icon {
-            display: inline-block;
-            position: absolute;
-            top: 76.8%;
-            right: 9.5%;
-            font-size: 20px;
-        }
-        /* css for solid heart before the hover */
-        .solid {
-            position: absolute;
-            opacity: 0;
-            background: linear-gradient(to top, #FF79DA, #9356DC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: opacity 3000ms;
-        }
+//         &__card-icon {
+//             display: inline-block;
+//             position: absolute;
+//             top: 76.8%;
+//             right: 9.5%;
+//             font-size: 20px;
+//         }
+//         /* css for solid heart before the hover */
+//         .solid {
+//             position: absolute;
+//             opacity: 0;
+//             background: linear-gradient(to top, #FF79DA, #9356DC);
+//             background-clip: text;
+//             -webkit-text-fill-color: transparent;
+//             transition: opacity 3000ms;
+//         }
 
-        /* css for solid heart after the hover */   
-        .restaurant__card-icon:hover .solid {
-            opacity: 100%;
-            background: linear-gradient(to top, #FF79DA, #9356DC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: opacity 3000ms; 
-        }
+//         /* css for solid heart after the hover */   
+//         .restaurant__card-icon:hover .solid {
+//             opacity: 100%;
+//             background: linear-gradient(to top, #FF79DA, #9356DC);
+//             background-clip: text;
+//             -webkit-text-fill-color: transparent;
+//             transition: opacity 3000ms; 
+//         }
 
-        /* css for the outline heart before the hover */
-        .outline {
-            position: absolute;
-            opacity: 100%;
-            transition: opacity 3000ms;
-        }
+//         /* css for the outline heart before the hover */
+//         .outline {
+//             position: absolute;
+//             opacity: 100%;
+//             transition: opacity 3000ms;
+//         }
               
-          /* css for the outline heart after the hover */
-        .restaurant__card-icon:hover .outline {
-            opacity: 0;
-            transition: opacity 3000ms; 
-        }
+//           /* css for the outline heart after the hover */
+//         .restaurant__card-icon:hover .outline {
+//             opacity: 0;
+//             transition: opacity 3000ms; 
+//         }
             
-    }
+//     }
 
-}
+// }
