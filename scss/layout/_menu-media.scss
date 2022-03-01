@@ -34,6 +34,9 @@
     .menu__price{
         padding: 0 8px 8px 50px;
     }
+    .menu__text {
+        width: 75%;
+    }
 
     .menu__card:hover {
         .menu__text {
@@ -83,9 +86,11 @@
         width: 90%;
         margin-left: 40px;
     }
-
+    .menu__text {
+        width: 88%;
+    }
     .menu__price {
-        padding: 0 8px 8px 137px;
+        padding: 0 8px 8px 50px;
     }
 
     .menu__description {
@@ -94,7 +99,7 @@
 
     .menu__card:hover {
         .menu__text {
-            width: 50%;
+            width: 70%;
         }
     }
 
@@ -112,7 +117,7 @@
     }
 
     .header__return {
-        top: 5%;
+        top: 4.5%;
         left: 2%;
     }
 
@@ -128,7 +133,7 @@
 
     .menu__title-icon {
         top: 6.5%;
-        left: 95.2%;
+        left: 97.2%;
     }
 
 /*-- CARDS--*/
@@ -151,17 +156,20 @@
     }
 
     .menu__card {
-        width: 85%;
+        width: 90%;
         margin-left: 35px;
     }
-        
+    .menu__text {
+        width: 82%;
+    } 
+
     .menu__price {
-        padding: 5px 8px 8px 54.6px;
+        padding: 5px 8px 8px 50px;
     }
 
     .menu__card:hover {
         .menu__text {
-            width: 50%;
+            width: 55%;
         }
     } 
 
